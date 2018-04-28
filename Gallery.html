@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <!--css-->
+    <link rel="stylesheet" href="Gallery.css">
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body id="BodyGallery">
+<div class="container-fluid">
+
+    <div id="asideLeft" class="asideLeft">
+        <div id="mySidenav" class="sidenav">
+            <a id="MenuitemClose" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="Menuitem1" href="#">About</a>
+            <a id="Menuitem2" href="#">Services</a>
+            <a id="Menuitem3" href="#">Clients</a>
+            <a id="Menuitem4" href="#">Contact</a>
+        </div>
+        <div id="main">
+                <span id="open" onclick="openNav()"> &#8285;</span>
+        </div>
+        <div id="parentLogo">
+            <img id="LogoGallery" src="IMG/LogoColor/GalleryLogo.png"/>
+        </div>
+        <h2>Gallery</h2>
+    </div>
+    <div id="asideRight" class="asideRight">
+        <div class="LocationImg"></div>
+        <video controls class="VIDEO">
+            <source src="VideoGallery/mov_bbb.mp4" type="video/mp4">
+            <source src="VideoGallery/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div id="content" class="content">
+        <ul id="SearchHide">
+            <div id="LoadPlaceAjax">
+                    <li class="li1"><i class="featured-place-group ">
+                        <div class="image">
+                            <img src="IMG/testjpg/629qyO.jpg"/>
+                        </div>
+
+                    </i></li>
+                    <li class="li4"><i class="featured-place-group ">
+                        <div class="image">
+                            <video src="VideoGallery/mov_bbb.mp4"></video>
+                        </div>
+
+                    </i></li>
+                    <li class="li1"><i class="featured-place-group ">
+                    <div class="image">
+                        <img src="IMG/testjpg/629qyO.jpg"/>
+                    </div>
+
+                </i></li>
+                    <li class="li4"><i class="featured-place-group ">
+                    <div class="image">
+                        <video src="VideoGallery/mov_bbb.mp4"></video>
+                    </div>
+
+                </i></li>
+                    <li class="li1"><i class="featured-place-group ">
+                    <div class="image">
+                        <img src="IMG/testjpg/629qyO.jpg"/>
+                    </div>
+
+                </i></li>
+                    <li class="li4"><i class="featured-place-group ">
+                    <div class="image">
+                        <video src="VideoGallery/mov_bbb.mp4"></video>
+                    </div>
+
+                </i></li>
+            </div>
+        </ul>
+        <input class="closebtnEnd" type="button" onclick="windowClose();">
+    </div>
+
+</div>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+    function windowClose() {
+        window.open('', '_parent', '');
+        window.close();
+    }
+</script>
+<script>
+    var open=document.getElementById("open");
+    var main = document.getElementById("main");
+    var side = document.getElementById("mySidenav");
+    var left = document.getElementById("asideLeft");
+    var center = document.getElementById("content");
+    var right = document.getElementById("asideRight");
+    var MenuS1 = document.getElementById("MenuitemClose");
+    var MenuS2 = document.getElementById("Menuitem1");
+    var MenuS3 = document.getElementById("Menuitem2");
+    var MenuS4 = document.getElementById("Menuitem3");
+    var MenuS5 = document.getElementById("Menuitem4");
+    var Logo=document.getElementById("LogoGallery");
+
+    function openNav() {
+         side.style.width = "10%";
+         main.style.marginLeft = "250px";
+         left.style.marginLeft = "10%";
+         center.style.marginLeft = "10%";
+         right.style.width = "26%";
+         // open.style.display="none";
+         Logo.style.Top="5%";
+
+
+        // RESPONSIVE OPEN.................................................................
+        if (window.matchMedia("(max-width: 425px)").matches) {
+
+            main.style.marginLeft="-20%";
+            side.style.width = "100%";
+            side.style.height = "11.6%";
+            left.style.marginTop = "15%";
+            left.style.marginLeft = "0%";
+            center.style.marginTop = "15%";
+            center.style.marginLeft = "0%";
+            right.style.marginTop = "15%";
+            open.style.display="block";
+            Logo.style.top="revert";
+
+
+            MenuS1.style.float = "left";
+            MenuS1.style.padding = "0";
+
+            MenuS2.style.float = "left";
+            MenuS2.style.fontSize = "10px";
+
+            MenuS3.style.float = "left";
+            MenuS3.style.fontSize = "10px";
+
+            MenuS4.style.float = "left";
+            MenuS4.style.fontSize = "10px";
+
+            MenuS5.style.float = "left";
+            MenuS5.style.fontSize = "10px";
+
+        } else {
+            // Logo.style.top="82px";
+
+        }
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("asideLeft").style.marginLeft = "0";
+        document.getElementById("content").style.marginLeft = "0";
+        document.getElementById("asideRight").style.width = "35%";
+
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            side.style.width = "0";
+            side.style.height = "0";
+            left.style.marginTop = "0";
+            center.style.marginTop = "0";
+            right.style.marginTop = "0";
+            Logo.style.top="revert";
+
+
+        } else {
+            x.innerHTML = "";
+        }
+
+    }
+</script>

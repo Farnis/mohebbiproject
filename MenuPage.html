@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="Page1.css">
+    <link rel="stylesheet" href="Article.css">
+<!--
+    <link rel="stylesheet" href="AbouteMe.css">
+-->
+    <!--<link rel="stylesheet" href="Gallery.css">-->
+    <script src="JQ/jquery-3.3.1.min.js"></script>
+<!--
+    <script src="Article.js"></script>
+-->
+    <!--<script src="Gallery.js"></script>-->
+    <!--bootstrap-->
+    <script src="node_modules/angular/angular.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div id="BodyAbout" style="display: none"></div>
+<div id="parentAll">
+    <div id="Gallery" class="foo Line">
+        <img src="IMG/LogoColor/GalleryLogo.png" class="LogoGallery"/>
+    </div>
+    <div id="Education" class="foo Line">
+        <img src="IMG/LogoColor/EducationLogo.png" class="LogoEducation"/>
+    </div>
+    <div id="Article" class="foo Line">
+        <img src="IMG/LogoColor/ArticleLogo.png" class="LogoArticle"/>
+    </div>
+    <div id="AboutMe" class="foo Line">
+        <img src="IMG/LogoColor/AboutMeLogo.png" class="LogoMe"/>
+    </div>
+    <div id="Empty-a" class="foo Line">
+        <img src="IMG/LogoColor/AboutMeLogo.png" class="LogoEmty-a"/>
+    </div>
+    <div id="login" class="foo Line">
+        <img src="IMG/LogoColor/LogInLogo.png" class="LogoLogIn"/></div>
+    <div id="Empty-b" class="foo Line">
+        <img src="IMG/LogoColor/YesOrNoLogo.png" class="LogoYesOrNo"/></div>
+    <div id="Empty-c" class="foo Line">
+    </div>
+    <div id="Empty-d" class="foo Line">
+    </div>
+    <div id="Empty-e" class="foo Line">
+        <div class="parentFab">
+            <input type="checkbox" id="share">
+            <label title="Share" for="share" id="share"></label>
+            <span title="facebook" id="facebook"></span>
+            <span title="twitter" id="twitter"></span>
+            <span title="Google +" id="googleplus"></span>
+            <span title="instagram" id="instagram"></span>
+            <span title="vero" id="vero"></span>
+            <span title="viber" id="viber"></span>
+            <span title="linkdin" id="linkdin"></span>
+            <span title="telegram" id="telegram"></span>
+            <span title="pinterest" id="pinterest"></span>
+            <span title="what's app" id="whatsapp"></span>
+        </div>
+    </div>
+</div>
+<div id="ParentImage">
+    <div>
+        <img src="IMG/Gallery.png" class="LineImage item1"/>
+    </div>
+    <div>
+        <img src="IMG/Education.png" class="LineImage item2"/>
+    </div>
+    <div>
+        <img src="IMG/Article.png" class="LineImage item3"/>
+    </div>
+    <div>
+        <img src="IMG/AbautMe.png" class="LineImage item4"/>
+    </div>
+    <div>
+        <img src="IMG/SaveOrderMe.png" class="LineImage item5"/>
+    </div>
+    <div>
+        <img src="IMG/LogIn.png" class="LineImage item6"/>
+    </div>
+    <div>
+        <img src="IMG/YesOrNo2.png" class="LineImage item7"/>
+    </div>
+</div>
+<div id="Div1" class="row col-lg-12"></div>
+<div id="Div2" class="row col-lg-12"></div>
+<div id="Div3" class="row col-lg-12"></div>
+<div id="Div4" class="row col-lg-12"></div>
+<div id="Div5" class="row col-lg-12"></div>
+<div id="Div6" class="row col-lg-12"></div>
+<!--LibraryLoding-->
+<script src="JQ/scrollreveal.min.js"></script>
+</body>
+<script src="AboutMe.js"></script>
+<script>
+    window.sr = ScrollReveal({reset: true});
+    // Custom Settings
+    sr.reveal('#Gallery', {
+        origin: 'top',
+        duration: 1000
+    });
+    sr.reveal('#Education', {
+        origin: 'top',
+        duration: 2000,
+    });
+    sr.reveal('#Article', {
+        origin: 'top',
+        duration: 3000,
+    });
+    sr.reveal('#AboutMe', {
+        origin: 'top',
+        duration: 4000,
+    });
+    sr.reveal('#Empty-a', {
+        origin: 'top',
+        duration: 5000,
+    });
+    sr.reveal('#login', {
+        origin: 'top',
+        duration: 6000,
+    });
+    sr.reveal('#Empty-b', {
+        origin: 'top',
+        duration: 7000,
+    });
+    sr.reveal('#Empty-c', {
+        origin: 'top',
+        duration: 8000,
+    });
+    sr.reveal('#Empty-d', {
+        origin: 'top',
+        duration: 9000,
+    });
+    sr.reveal('#Empty-e', {
+        origin: 'top',
+        duration: 10000,
+    });
+    // IMG LODING
+    sr.reveal('.LineImage', {
+        // viewOffset: { top: 100, right: 50, bottom: 30, left: 0 },
+        origin: 'bottom',
+        delay: 3500,
+        duration: 2000,
+    });
+</script>
+<script>
+    // HOVER BY IMG
+    $('.item1').hover(function () {
+        $(".LogoGallery").show("fast");
+    }, function () {
+        $(".LogoGallery ").hide("fast");
+    });
+    // ..........................
+    $('.item2').hover(function () {
+        $(".LogoEducation").show("fast");
+    }, function () {
+        $(".LogoEducation ").hide("fast");
+    });
+    // ..........................
+    $('.item3').hover(function () {
+        $(".LogoArticle").show("fast");
+    }, function () {
+        $(".LogoArticle ").hide("fast");
+    });
+    // ..........................
+    $('.item4').hover(function () {
+        $(".LogoMe").show("fast");
+    }, function () {
+        $(".LogoMe ").hide("fast");
+
+    });
+    // ..........................
+    $('.item5').hover(function () {
+        $(".LogoEmty-a").show("fast");
+    }, function () {
+        $(".LogoEmty-a ").hide("fast");
+
+    });
+    $('.item6').hover(function () {
+        $(".LogoLogIn").show("fast");
+    }, function () {
+        $(".LogoLogIn ").hide("fast");
+
+    });
+    $('.item7').hover(function () {
+        $(".LogoYesOrNo").show("fast");
+    }, function () {
+        $(".LogoYesOrNo ").hide("fast");
+
+    });
+
+</script>
+<script>
+
+       $(document).ready(function () {
+       // onclick Gallery
+       //  $(".item1").click(function () {
+       //      $('.item1').fadeOut();
+       //      $(".item2").fadeOut();
+       //      $(".item3").fadeOut();
+       //      $(".item4").fadeOut();
+       //      $(".item5").fadeOut();
+       //      $(".item6").fadeOut();
+       //      $(".item7").fadeOut();
+       //      $("#Education").fadeOut(1100);
+       //      $("#Article").fadeOut(1400);
+       //      $("#AboutMe").fadeOut(1600);
+       //      $("#Empty-a").fadeOut(1800);
+       //      $("#login").fadeOut(2000);
+       //      $("#Empty-b").fadeOut(2100);
+       //      $("#Empty-c").fadeOut(2400);
+       //      $("#Empty-d").fadeOut(2600);
+       //      $("#Empty-e").fadeOut(2800);
+       //      $("#Gallery").fadeOut(3000);
+       //      $("#Div1").fadeIn(5000);
+       //
+       //
+       //
+       //  });
+        // onclick Education
+        $(".item2").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Article").fadeOut(1400);
+            $("#AboutMe").fadeOut(1600);
+            $("#Empty-a").fadeOut(1800);
+            $("#login").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#Education").fadeOut(3000);
+            $("#Div2").fadeIn(5000);
+        });
+       // onclick Article
+       //  $(".item3").click(function () {
+       //     $(".item1").fadeOut();
+       //      $(".item2").fadeOut();
+       //     $(".item3").fadeOut();
+       //     $(".item4").fadeOut();
+       //     $(".item5").fadeOut();
+       //     $(".item6").fadeOut();
+       //     $(".item7").fadeOut();
+       //       $("#Gallery").fadeOut(1100);
+       //       $("#Education").fadeOut(1400);
+       //       $("#AboutMe").fadeOut(1600);
+       //       $("#Empty-a").fadeOut(1800);
+       //      $("#login").fadeOut(2000);
+       //      $("#Empty-b").fadeOut(2100);
+       //       $("#Empty-c").fadeOut(2400);
+       //       $("#Empty-d").fadeOut(2600);
+       //       $("#Empty-e").fadeOut(2800);
+       //       $("#Article").fadeOut(3000);
+       //       $("#Div3").fadeIn(5000);
+       //  });
+        // onclick AbouteMe
+        // $(".item4").click(function () {
+        //     $(".item1").fadeOut();
+        //    $(".item2").fadeOut();
+        //    $(".item3").fadeOut();
+        //     $(".item4").fadeOut();
+        //      $(".item5").fadeOut();
+        //     $(".item6").fadeOut();
+        //     $(".item7").fadeOut();
+        //     $("#Gallery").fadeOut(1100);
+        //    $("#Education").fadeOut(1400);
+        //     $("#Article").fadeOut(1600);
+        //     $("#Empty-a").fadeOut(1800);
+        //      $("#login").fadeOut(2000);
+        //      $("#Empty-b").fadeOut(2100);
+        //      $("#Empty-c").fadeOut(2400);
+        //     $("#Empty-d").fadeOut(2600);
+        //     $("#Empty-e").fadeOut(2800);
+        //     $("#AboutMe").fadeOut(3000);
+        //      $("#Div4").fadeIn(5000);
+        // });
+        // onclick OrderMe
+        $(".item5").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Education").fadeOut(1400);
+            $("#Article").fadeOut(1600);
+            $("#AboutMe").fadeOut(1800);
+            $("#login").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#Empty-a").fadeOut(3000);
+            $("#Div5").fadeIn(5000);
+        });
+        // onclick Log in
+        $(".item6").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Education").fadeOut(1400);
+            $("#Article").fadeOut(1600);
+            $("#AboutMe").fadeOut(1800);
+            $("#Empty-a").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#login").fadeOut(3000);
+            $("#Div6").fadeIn(5000);
+        });
+        // onclick Log in
+        $(".item7").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Education").fadeOut(1400);
+            $("#Article").fadeOut(1600);
+            $("#AboutMe").fadeOut(1800);
+            $("#Empty-a").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#login").fadeOut(3000);
+            $("#Div6").fadeIn(5000);
+        });
+    });
+</script>
+<script language="javascript" type="text/javascript">
+    function windowClose() {
+        window.open('', '_parent', '');
+        window.close();
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "10%";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("asideLeft").style.marginLeft = "10%";
+        document.getElementById("content").style.marginLeft = "10%";
+        document.getElementById("asideRight").style.width = "26%";
+
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("asideLeft").style.marginLeft = "0";
+        document.getElementById("content").style.marginLeft = "0";
+        document.getElementById("asideRight").style.width = "35%";
+    }
+</script>
+<script language="javascript" type="text/javascript">
+    function windowClose() {
+        window.open('', '_parent', '');
+        window.close();
+    }
+</script>
+</html>

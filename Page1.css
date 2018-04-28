@@ -1,0 +1,356 @@
+
+body{
+    margin: auto;
+    background-image: url("IMG/BackgroundHomemmmmm.jpg");
+    background-size: cover;
+}
+#parentAll{
+    width: 100%;
+    height:100%;
+    margin: auto;
+    z-index: 900;
+
+}
+.foo {
+    min-height:100vh;
+    color: white;
+    text-transform: uppercase;
+}
+.Line{
+    width:10%;
+    height: 100%;
+    margin: auto;
+}
+#ParentImage{
+    z-index: 1000;
+    position: fixed;
+    top: 200px;
+
+}
+.LineImage{
+    width:10%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    z-index: 1000;
+    /*width: 149px;*/
+    /*margin: auto;*/
+}
+#Gallery{
+    float: left;
+    background-color: #94f4e9
+}
+#Education{
+    float: left;
+    background-color: #e3f190
+}
+#Article{
+    float: left;
+    background-color: #8fc5f3
+}
+#AboutMe{
+    float: left;
+    background-color: #f4c692
+}
+#Empty-a{
+    background-color: #d695f3;
+    float: left;
+}
+#login{
+    float: left;
+    background-color: #aaf191;
+}
+#Empty-b{
+    background-color: #f29e93;
+    float: left;
+}
+#Empty-c{
+    background-color: #8fbcf3;
+    float: left;
+}
+#Empty-d{
+    background-color: #f4d092;
+    float: left;
+}
+#Empty-e{
+    background-color: #94f4e9;
+    float: left;
+}
+#Div1 {
+    background-color: #94f4e9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+}
+#Div2 {
+    background-color: #e3f190;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+}
+#Div3 {
+    background-color: #8fc5f3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+}
+#Div4 {
+    background-color: #f4c692;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+}
+#Div5 {
+    background-color: #d695f3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+
+}
+#Div6 {
+    background-color: #aaf191;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*left: 10%;*/
+    z-index: 2000;
+    display: none;
+    margin: auto;
+}
+#parentAll img{
+    display: none;
+    height: 50%;
+    width: 52%;
+    position: relative;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+/*fabFlatingActionBar*/
+.parentFab{
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    text-align: right;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 100%;
+    left: auto;
+    width: 710px !important;
+}
+#share {
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+    height: 50px;
+    width: 50px;
+    background-color: #94f4e9;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #878787;
+    cursor: pointer;
+    z-index: 3;
+    background-image: url(http://www.zupimages.net/up/15/27/enby.png);
+    background-position: 46% center ;
+    background-size:  16px auto;
+    background-repeat: no-repeat;
+}
+input {
+    display: none;
+}
+#share ~ span {
+    z-index: 2;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 25px;
+    right: 25px;
+    opacity: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+input:checked ~ #share ~ span {
+    box-shadow: 0 0 8px #878787;
+    opacity: 1;
+}
+#facebook {
+    background: #DD4B39 url("IMG/Social Networks/Facebook.png") center no-repeat;
+}
+input:checked ~ #share ~ #facebook {
+    bottom: 90px;
+}
+#twitter {
+    background: #2AA9E0 url("IMG/Social Networks/Twitter.png") center no-repeat;
+}
+input:checked ~ #share ~ #twitter {
+    bottom: 140px;
+}
+#googleplus {
+    background: #DD4B39 url("IMG/Social Networks/Gogleplus.png") center no-repeat;
+}
+input:checked ~ #share ~ #googleplus {
+    bottom: 190px;
+}
+#instagram {
+    background: #a0a0a0 url("IMG/Social Networks/Instagram.png") center no-repeat;
+}
+input:checked ~ #share ~ #instagram {
+    bottom: 240px;
+}
+#telegram {
+    background: #a0a0a0 url("IMG/Social Networks/Telegram.png") center no-repeat;
+}
+input:checked ~ #share ~ #telegram {
+    bottom: 290px;
+}
+#pinterest {
+    background: #a0a0a0 url("IMG/Social Networks/Pinterest.png") center no-repeat;
+}
+input:checked ~ #share ~ #pinterest {
+    bottom: 340px;
+}
+#vero {
+    background: #a0a0a0 url("IMG/Social Networks/Vero.png") center no-repeat;
+}
+input:checked ~ #share ~ #vero {
+    bottom: 390px;
+}
+#viber {
+    background: #a0a0a0 url("IMG/Social Networks/Viber.png") center no-repeat;
+}
+input:checked ~ #share ~ #viber {
+    bottom: 440px;
+}
+#whatsapp {
+    background: #a0a0a0 url("IMG/Social Networks/Whatsapp.png") center no-repeat;
+}
+input:checked ~ #share ~ #whatsapp {
+    bottom: 490px;
+}
+#linkdin {
+    background: #a0a0a0 url("IMG/Social Networks/Linkdin.png") center no-repeat;
+}
+input:checked ~ #share ~ #linkdin {
+    bottom: 540px;
+}
+
+/*.........................................*/
+@media only screen and (max-width: 425px) {
+    .foo {
+        min-height:20vh;
+        color: white;
+        text-transform: uppercase;
+    }
+    .Line{
+        width:100%;
+        height: 10%;
+        margin: auto;
+    }
+
+    #ParentImage{
+        z-index: 1000;
+        position: absolute;
+        top: 0px;
+
+    }
+    .LineImage{
+        float: none;
+        margin-top: -2%;
+        margin-left: 40%;
+        width: 20%;
+        /*height:30vh;*/
+        /*margin: auto;*/
+    }
+    #a-image img{
+        background-image: url("IMG/testjpg/629qyO.jpg");
+    }
+    /*.item6{*/
+    /*margin-top: -1% !important;*/
+    /*}*/
+
+    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+        float: none;
+
+    }
+}
+@media only screen and (max-width: 375px) {
+    .foo {
+        min-height:20vh;
+        color: white;
+        text-transform: uppercase;
+    }
+    .Line{
+        width:100%;
+        height: 10%;
+        margin: auto;
+    }
+    #ParentImage{
+        z-index: 1000;
+        position: absolute;
+        top: 0px;
+
+    }
+    .LineImage{
+        float: none;
+        margin-top: 1%;
+        margin-left: 40%;
+        width: 20%
+        /*margin: auto;*/
+    }
+
+    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+        float: none;
+
+    }
+}
+@media only screen and (max-width: 320px) {
+    .foo {
+        min-height:15vh;
+        color: white;
+        text-transform: uppercase;
+    }
+    .Line{
+        width:100%;
+        /*height: 5%;*/
+        margin: auto;
+    }
+    #ParentImage{
+        /*z-index: 1000;*/
+        position: absolute;
+        top: 0px;
+
+    }
+    .LineImage{
+        float: none;
+        margin-top: -2%;
+        margin-left: 40%;
+        width: 20%;
+        /*height:30vh;*/
+        /*margin: auto;*/
+    }
+
+    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+        float: none;
+
+    }
+}
