@@ -17,31 +17,84 @@
 </head>
 <body id="BodyArticle">
 <div class="container-fluid">
-    <div id="asideLeft" class="asideLeft">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+    <div id="asideLeftArticle" class="asideLeftArticle">
+        <div id="mySidenavArticle" class="sidenavArticle">
+            <a id="itemClose" href="javascript:void(0)" class="closebtnArticle" onclick="closeNav()">&times;</a>
+            <a id="item1" href="#">About</a>
+            <a id="item2" href="#">Services</a>
+            <a id="item3" href="#">Clients</a>
+            <a id="item4" href="#">Contact</a>
         </div>
-        <div id="main">
-                <span style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #0c5460;"
+        <div id="mainArticle">
+                <span id="Open" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #0c5460;"
                       onclick="openNav()"> &#8285;</span>
         </div>
-        <div>
-            <img id="LogoGallery" src="IMG/LogoColor/ArticleLogo.png"/>
+        <div id="parentLogoArticle">
+            <img id="LogoGalleryArticle" src="IMG/LogoColor/ArticleLogo.png"/>
         </div>
         <h2>Article</h2>
     </div>
-`       <div id="content" class="content">
-        <div class="article">
-            <a><i class="far fa-file-alt"></i> Article's Name</a><br/>
-            <a><i class="far fa-file-alt"></i> Article's Name</a><br/>
+    <div id="asideRightArticle" class="asideRightArticle">
+        <div>
+            <h4>Articles's Name</h4>
+                 <p>
+
+                    W3Schools is optimized for learning, testing, and training. Examples might be simplified to
+                    improve\n' +
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' +
+                    read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/> W3Schools is optimized for learning,
+                    testing, and training. Examples might be simplified to improve\n' + ' reading and basic
+                    understanding. Tutorials, references, and examples are constantly reviewed to avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' + ' read and accepted our terms of use, cookie and privacy policy.\n' +
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/> W3Schools is optimized for learning,
+                    testing, and training. Examples might be simplified to improve\n' +
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' +
+                    read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/> W3Schools is optimized for learning,
+                    testing, and training. Examples might be simplified to improve\n' +
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' +
+                    read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/> W3Schools is optimized for learning,
+                    testing, and training. Examples might be simplified to improve\n' +
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' +
+                    read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/> W3Schools is optimized for learning,
+                    testing, and training. Examples might be simplified to improve\n' +
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid\n' +
+                    errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+                    have\n' +
+                    read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2018 by Refsnes Data. All Rights Reserved.<br/>
+
+                </p>
+
+            </div>
 
         </div>
-
-        <input class="closebtnEnd" type="button" onclick="windowClose();">
+    </div>
+    <div id="contentArticle" class="contentArticle">
+        <div class="articleArticle">
+            <a><i class="far fa-file-alt"></i> Article's Name</a><br/>
+            <a><i class="far fa-file-alt"></i> Article's Name</a><br/>
+        </div>
+<div class="parentCloseAbout">
+        <input class="closebtnEndArticle" type="button" onclick="windowClose();">
+</div>
     </div>
 </div>
 </body>
@@ -53,21 +106,85 @@
     }
 </script>
 <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "10%";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.getElementById("asideLeft").style.marginLeft = "10%";
-        document.getElementById("content").style.marginLeft = "10%";
-        document.getElementById("asideRight").style.width = "26%";
+    var side = document.getElementById("mySidenavArticle");
+    var main = document.getElementById("mainArticle");
+    var Left = document.getElementById("asideLeftArticle");
+    var Center = document.getElementById("contentArticle");
+    var Right = document.getElementById("asideRightArticle");
+    var Close = document.getElementById("itemClose");
+    var oneI = document.getElementById("item1");
+    var twoI = document.getElementById("item2");
+    var threeI = document.getElementById("item3");
+    var fourI = document.getElementById("item4");
+    var open = document.getElementById("Open");
+    // var Logo = document.getElementById("parentLogoArticle");
 
+
+    function openNav() {
+        side.style.width = "10%";
+        main.style.marginLeft = "250px";
+        Left.style.marginLeft = "10%";
+        Center.style.marginLeft = "10%";
+        Right.style.width = "26%";
+
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+
+            main.style.marginLeft = "-20%";
+            side.style.width = "100%";
+            side.style.height = "13%";
+            Left.style.marginTop = "15%";
+            Left.style.marginLeft = "0%";
+            Center.style.marginTop = "15%";
+            Center.style.marginLeft = "0%";
+            Right.style.marginTop = "15%";
+            open.style.display = "block";
+            // Logo.style.display = "none";
+
+
+            Close.style.float = "left";
+            Close.style.padding = "0";
+            Close.style.top = "1%";
+            Close.style.left = "91%"
+
+            oneI.style.float = "left";
+            oneI.style.fontSize = "10px";
+
+            twoI.style.float = "left";
+            twoI.style.fontSize = "10px";
+
+            threeI.style.float = "left";
+            threeI.style.fontSize = "10px";
+
+            fourI.style.float = "left";
+            fourI.style.fontSize = "10px";
+
+        }
+        else {
+
+
+        }
 
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("asideLeft").style.marginLeft = "0";
-        document.getElementById("content").style.marginLeft = "0";
-        document.getElementById("asideRight").style.width = "35%";
+        document.getElementById("mySidenavArticle").style.width = "0";
+        document.getElementById("mainArticle").style.marginLeft = "0";
+        document.getElementById("asideLeftArticle").style.marginLeft = "0";
+        document.getElementById("contentArticle").style.marginLeft = "0";
+        document.getElementById("asideRightArticle").style.width = "35%";
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            side.style.width = "0";
+            side.style.height = "0";
+            Left.style.marginTop = "0";
+            Center.style.marginTop = "0";
+            Right.style.marginTop = "0";
+            // Logo.style.bottom="95%";
+
+
+        } else {
+
+        }
     }
 </script>

@@ -14,51 +14,49 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
 </head>
 
 <body id="BodyAboutMe">
 <div class="container-fluid">
 
-    <div id="asideLeft" class="asideLeftAbout">
-        <div id="mySidenav" class="sidenavAbout">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+    <div id="asideLeftAbout" class="asideLeftAbout">
+        <div id="mySidenavAbout" class="sidenavAbout">
+            <a id="CloseAbout" href="javascript:void(0)" class="closebtnAbout" onclick="closeNav()">&times;</a>
+            <a id="oneitemAbout" href="#">About</a>
+            <a id="twoitemAbout" href="#">Services</a>
+            <a id="threeitemAbout" href="#">Clients</a>
+            <a id="fureitemAbout" href="#">Contact</a>
         </div>
-        <div id="main">
-                <span style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #977750;"
+        <div id="mainAbout">
+                <span id="OpenAbout" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #977750;"
                       onclick="openNav()"> &#8285;</span>
         </div>
-        <div>
+        <div id="parentLogoAbout">
             <img id="LogoAbouteMe" src="IMG/LogoColor/AboutMeLogo.png"/>
         </div>
         <h2>AboutMe</h2>
     </div>
-    <div id="asideRight" class="asideRightAbout">
-        <video class="MyVideo" controls>
+    <div id="asideRightAbout" class="asideRightAbout">
+        <video class="MyVideoAbout" controls>
             <source src="VideoGallery/mov_bbb.mp4" type="video/mp4">
         </video>
-        <br/>
-        <div class="parentFab">
-        <input type="checkbox" id="share">
-        <label title="Share" for="share" id="share"></label>
-        <span class="iconFab" title="facebook" id="facebook"></span>
-        <span class="iconFab" title="twitter" id="twitter"></span>
-        <span class="iconFab" title="Google +" id="googleplus"></span>
-        <span class="iconFab" title="instagram" id="instagram"></span>
-        <span class="iconFab" title="vero" id="vero"></span>
-        <span class="iconFab" title="viber" id="viber"></span>
-        <span class="iconFab" title="linkdin" id="linkdin"></span>
-        <span class="iconFab" title="telegram" id="telegram"></span>
-        <span class="iconFab" title="pinterest" id="pinterest"></span>
-        <span class="iconFab" title="whatsapp" id="whatsapp"></span>
+        <br/><br/><br/>
+        <div class="parentFabAbout">
+        <input type="checkbox" id="shareAbout1">
+        <label title="Share" for="shareAbout1" id="shareAbout"></label>
+        <span class="iconFabAbout" title="facebook" id="facebookAbout"></span>
+        <span class="iconFabAbout" title="twitter" id="twitterAbout"></span>
+        <span class="iconFabAbout" title="Google +" id="googleplusAbout"></span>
+        <span class="iconFabAbout" title="instagram" id="instagramAbout"></span>
+        <span class="iconFabAbout" title="vero" id="veroAbout"></span>
+        <span class="iconFabAbout" title="viber" id="viberAbout"></span>
+        <span class="iconFabAbout" title="linkdin" id="linkdinAbout"></span>
+        <span class="iconFabAbout" title="telegram" id="telegramAbout"></span>
+        <span class="iconFabAbout" title="pinterest" id="pinterestAbout"></span>
+        <span class="iconFabAbout" title="whatsapp" id="whatsappAbout"></span>
         </div>
-
     </div>
-    <div id="content" class="contentAbout">
+    <div id="contentAbout" class="contentAbout">
         <p>
             What is W3Schools?
             W3Schools is a web developers site, with tutorials and references on web development languages such as HTML,
@@ -69,9 +67,8 @@
             W3Schools was originally created in 1998 by Refsnes Data, a Norwegian software development and consulting
             company.
         </p>
-        <input class="closebtnEndAbaoteMe" type="button" onclick="windowClose();">
+        <input class="closebtnEndAbout" type="button" onclick="windowClose();">
     </div>
-
 </div>
 </body>
 </html>
@@ -82,57 +79,81 @@
     }
 </script>
 <script>
+    var Side=document.getElementById("mySidenavAbout");
+    var Main=document.getElementById("mainAbout");
+    var Left=document.getElementById("asideLeftAbout");
+    var Center=document.getElementById("contentAbout");
+    var Right=document.getElementById("asideRightAbout");
+    var Open=document.getElementById("OpenAbout");
+    var Close = document.getElementById("CloseAbout");
+    var oneI = document.getElementById("oneitemAbout");
+    var twoI = document.getElementById("twoitemAbout");
+    var threeI = document.getElementById("threeitemAbout");
+    var fourI = document.getElementById("fureitemAbout");
+
     function openNav() {
-        document.getElementById("mySidenav").style.width = "10%";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.getElementById("asideLeft").style.marginLeft = "10%";
-        document.getElementById("content").style.marginLeft = "10%";
-        document.getElementById("asideRight").style.width = "26%";
-
-
-
+        Side.style.width = "10%";
+        Main.style.marginLeft = "250px";
+        Left.style.marginLeft = "10%";
+        Center.style.marginLeft = "10%";
+        Right.style.width = "26%";
         // RESPONSIVE OPEN.................................................................
         if (window.matchMedia("(max-width: 425px)").matches) {
 
-            main.style.marginLeft="-20%";
-            side.style.width = "100%";
-            side.style.height = "11.6%";
-            left.style.marginTop = "15%";
-            left.style.marginLeft = "0%";
-            center.style.marginTop = "15%";
-            center.style.marginLeft = "0%";
-            right.style.marginTop = "15%";
-            open.style.display="block";
-            Logo.style.top="10px";
+            Main.style.marginLeft = "-20%";
+            Side.style.width = "100%";
+            Side.style.height = "15%";
+            Left.style.marginTop = "15%";
+            Left.style.marginLeft = "0%";
+            Center.style.marginTop = "15%";
+            Center.style.marginLeft = "0%";
+            Right.style.marginTop = "15%";
+            Open.style.display = "block";
+            // Logo.style.display = "none";
 
 
-            MenuS1.style.float = "left";
-            MenuS1.style.padding = "0";
+            Close.style.float = "left";
+            Close.style.padding = "0";
+            Close.style.top = "1%";
+            Close.style.left = "91%";
 
-            MenuS2.style.float = "left";
-            MenuS2.style.fontSize = "10px";
+            oneI.style.float = "left";
+            oneI.style.fontSize = "10px";
 
-            MenuS3.style.float = "left";
-            MenuS3.style.fontSize = "10px";
+            twoI.style.float = "left";
+            twoI.style.fontSize = "10px";
 
-            MenuS4.style.float = "left";
-            MenuS4.style.fontSize = "10px";
+            threeI.style.float = "left";
+            threeI.style.fontSize = "10px";
 
-            MenuS5.style.float = "left";
-            MenuS5.style.fontSize = "10px";
+            fourI.style.float = "left";
+            fourI.style.fontSize = "10px";
 
-        } else {
-            x.innerHTML = "";
+        }
+        else {
+
+
         }
     }
-
-    }
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("asideLeft").style.marginLeft = "0";
-        document.getElementById("content").style.marginLeft = "0";
-        document.getElementById("asideRight").style.width = "35%";
+        Side.style.width = "0";
+        Main.style.marginLeft = "0";
+        Left.style.marginLeft = "0";
+        Center.style.marginLeft = "0";
+        Right.style.width = "35%";
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            Side.style.width = "0";
+            Side.style.height = "0";
+            Left.style.marginTop = "0";
+            Center.style.marginTop = "0";
+            Right.style.marginTop = "0";
+            // Logo.style.bottom="95%";
+
+
+        } else {
+
+        }
     }
 
 </script>

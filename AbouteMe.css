@@ -13,13 +13,13 @@ body {
     background-color: #f3c893;
 }
 
-#LogoAbouteMe {
-    width: 55%;
+#parentLogoAbout {
+    width: 100%;
     /* height: 18%; */
     float: right;
     position: relative;
-    margin-top: -52%;
-    margin-right: -16%;
+    margin-top: 35%;
+    margin-right: -10%;!important;
 
 }
 
@@ -60,7 +60,7 @@ body {
     font-size: 18px;
 }
 
-.closebtnEndAbaoteMe {
+.closebtnEndAbout {
     position: fixed;
     bottom: 0;
     left: -15%;
@@ -77,13 +77,13 @@ body {
     display: block;
 }
 
-.closebtnEndAbaoteMe:hover {
+.closebtnEndAbout:hover {
     text-decoration: none;
     color: #fcdcb6;
 
 }
 
-.closebtnEndAbaoteMe:link {
+.closebtnEndAbout:link {
     border: none;
 }
 
@@ -96,7 +96,7 @@ body {
     height: 100vh;
 }
 
-.MyVideo {
+.MyVideoAbout {
     width: 80%;
     display: block;
     margin-left: auto;
@@ -135,7 +135,7 @@ body {
     text-decoration: none;
 }
 
-.sidenavAbout .closebtn {
+.sidenavAbout .closebtnAbout {
     position: absolute;
     top: 0;
     right: 25px;
@@ -143,23 +143,24 @@ body {
     margin-left: 50px;
 }
 
-#main {
+#mainAbout {
+
     transition: margin-left .5s;
     padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
+    .sidenavAbout {
         padding-top: 15px;
     }
 
-    .sidenav a {
+    .sidenavAbout a {
         font-size: 18px;
     }
 }
 
 /*.....................................................FabFlatingAvtion*/
-.parentFab {
+.parentFabAbout {
     height: 10% !important;
     position: absolute;
     right: 0;
@@ -172,7 +173,7 @@ body {
     z-index: 1;
 }
 
-#share {
+#shareAbout {
     position: fixed;
     bottom: 0% !important;
     right: 1%;
@@ -193,7 +194,7 @@ input {
     display: none;
 }
 
-#share ~ span {
+#shareAbout ~ span {
     z-index: 2;
     position: absolute;
     height: 40px;
@@ -206,312 +207,426 @@ input {
     cursor: pointer;
 }
 
-input:checked ~ #share ~ span {
+input:checked ~ #shareAbout ~ span {
     box-shadow: 0 0 8px #878787;
     opacity: 1;
 }
 
-#facebook {
+#facebookAbout {
     background: #DD4B39 url("IMG/Social Networks/Facebook.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #facebook {
+input:checked ~ #shareAbout ~ #facebookAbout {
     right: 90px;
     bottom: 17%;
 }
 
-#twitter {
+#twitterAbout {
     background: #2AA9E0 url("IMG/Social Networks/Twitter.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #twitter {
+input:checked ~ #shareAbout ~ #twitterAbout {
     right: 140px;
     bottom: 17%;
 
 }
 
-#googleplus {
+#googleplusAbout {
     background: #DD4B39 url("IMG/Social Networks/Gogleplus.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #googleplus {
+input:checked ~ #shareAbout ~ #googleplusAbout {
     right: 190px;
     bottom: 17%;
 
 }
 
-#instagram {
+#instagramAbout {
     background: #a0a0a0 url("IMG/Social Networks/Instagram.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #instagram {
+input:checked ~ #shareAbout ~ #instagramAbout {
     right: 240px;
     bottom: 17%;
 
 }
 
-#telegram {
+#telegramAbout {
     background: #a0a0a0 url("IMG/Social Networks/Telegram.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #telegram {
+input:checked ~ #shareAbout ~ #telegramAbout {
     right: 290px;
     bottom: 17%;
 
 }
 
-#pinterest {
+#pinterestAbout {
     background: #a0a0a0 url("IMG/Social Networks/Pinterest.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #pinterest {
+input:checked ~ #shareAbout ~ #pinterestAbout {
     right: 340px;
     bottom: 17%;
 
 }
 
-#vero {
+#veroAbout {
     background: #a0a0a0 url("IMG/Social Networks/Vero.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #vero {
+input:checked ~ #shareAbout ~ #veroAbout {
     right: 390px;
     bottom: 17%;
 
 }
 
-#viber {
+#viberAbout {
     background: #a0a0a0 url("IMG/Social Networks/Viber.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #viber {
+input:checked ~ #shareAbout ~ #viberAbout {
     right: 440px;
     bottom: 17%;
 
 }
 
-#whatsapp {
+#whatsappAbout {
     background: #a0a0a0 url("IMG/Social Networks/Whatsapp.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #whatsapp {
+input:checked ~ #shareAbout ~ #whatsappAbout {
     right: 490px;
     bottom: 17%;
 }
 
-#linkdin {
+#linkdinAbout {
     background: #a0a0a0 url("IMG/Social Networks/Linkdin.png") center no-repeat;
 }
 
-input:checked ~ #share ~ #linkdin {
+input:checked ~ #shareAbout ~ #linkdinAbout {
     right: 540px;
     bottom: 17%;
 
 }
 
-/*RESPONCIVE*/
-/*@media screen and (max-width: 425px) {*/
-    /*.sidenav {*/
-        /*height: 15%;*/
-        /*width: 100%;*/
-        /*position: fixed;*/
-        /*z-index: 1;*/
-        /*top: 0;*/
-        /*left: 0;*/
-        /*right: 0;*/
-        /*background-color: #fcdcb6;*/
-        /*!*overflow-x: hidden;*!*/
-        /*transition: 0.5s;*/
-        /*!*padding-left: 60px;*!*/
-    /*}*/
-
-    /*.sidenav a {*/
-        /*float: right;*/
-        /*!*padding: 8px 8px 8px 32px;*!*/
-        /*text-decoration: none;*/
-        /*font-size: 12px;*/
-        /*color: #977750;*/
-        /*display: block;*/
-        /*transition: 0.3s;*/
-        /*text-decoration: none;*/
-    /*}*/
-
-    /*.sidenav a:hover {*/
-        /*color: #977750;*/
-        /*text-decoration: none;*/
-    /*}*/
-
-    /*.sidenav .closebtn {*/
-        /*position: absolute;*/
-        /*top: 0;*/
-        /*right: 25px;*/
-        /*font-size: 36px;*/
-        /*margin-left: 50px;*/
-    /*}*/
-
-    /*#main {*/
-        /*transition: margin-left .5s;*/
-        /*padding: 16px;*/
-    /*}*/
 
 
 
-    /*body {*/
-        /*background-color: #ffffff !important;*/
-    /*}*/
-    /*.asideLeft {*/
-        /*position: fixed;*/
-        /*width: 100% !important;*/
-        /*height: 15%;*/
-        /*background-color: #f3c893;*/
-        /*top: 0;*/
+@media screen and (max-width: 1440px ) {
 
-    /*}*/
-    /*.content {*/
-        /*!*display: none;*!*/
-        /*z-index: 900;*/
-        /*position: fixed;*/
-        /*width: 100%;*/
-        /*height: 45%;*/
-        /*left: 0;*/
-        /*top:15%!important;*/
-        /*padding-bottom: 0;*/
-        /*background-color: #fcdcb6;*/
-        /*overflow-y: scroll !important;*/
-    /*}*/
-    /*.asideRightAbout {*/
-        /*!*display: none;*!*/
-        /*width: 100% !important;*/
-        /*height: 40%;*/
-        /*top: 60% !important;*/
-        /*z-index: 1000 !important;*/
-        /*background-color: #f3c893;*/
-        /*position: absolute;*/
-        /*right: 0;*/
-    /*}*/
-    /*#LogoGallery {*/
-        /*width: 16%;*/
-        /*bottom: -130px;*/
-        /*left: -12%;*/
+    .asideLeftAbout h2 {
+        font-size: 30px !important
+    }
+    .sidenavAbout a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #977750;
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
 
-    /*}*/
-    /*.closebtnEndX{*/
+    }
+
+}
+@media screen and (max-width: 1024px ) {
+    #LogoAbouteMe {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -71%;
+        margin-right: -16%;
+    }
+
+    #oneitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #twoitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #threeitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #fureitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    .asideLeftAbout h2 {
+        font-size: 20px;
+    }
+
+    #shareAbout {
+        position: fixed;
+        bottom: 0% !important;
+        right: 1%;
+        height: 40px;
+        width: 40px;
+        background-color: orange;
+        border-radius: 50%;
+        box-shadow: 0 0 6px #878787;
+        cursor: pointer;
+        z-index: 3;
+        background-image: url(http://www.zupimages.net/up/15/27/enby.png);
+        background-position: 46% center;
+        background-size: 16px auto;
+        background-repeat: no-repeat;
+    }
+
+    #shareAbout ~ span {
+        width: 30px;
+        height: 30px;
+    }
+
+    input:checked ~ #shareAbout ~ #facebookAbout {
+        right: 50px;
+        bottom: -5%;
+    }
+
+    input:checked ~ #shareAbout ~ #twitterAbout {
+        right: 79px;
+        bottom: 43%;
+    }
+
+    input:checked ~ #shareAbout ~ #googleplusAbout {
+        right: 103px;
+        bottom: 93%;
+    }
+
+    input:checked ~ #shareAbout ~ #veroAbout {
+        right: 63px;
+        bottom: 130%;
+    }
+
+    input:checked ~ #shareAbout ~ #viberAbout {
+        right: 89px;
+        bottom: 176%;
+    }
+
+    input:checked ~ #shareAbout ~ #instagramAbout {
+        right: 38px;
+        bottom: 81%;
+    }
+
+    input:checked ~ #shareAbout ~ #linkdinAbout {
+        right: 3px;
+        bottom: 122%;
+    }
+
+    input:checked ~ #shareAbout ~ #telegramAbout {
+        right: 26px;
+        bottom: 180%;
+    }
+
+    input:checked ~ #shareAbout ~ #pinterestAbout {
+        right: 52px;
+        bottom: 231%;
+    }
+
+    input:checked ~ #shareAbout ~ #whatsappAbout {
+        right: 130px;
+        bottom: 151%;
+    }
+}
+@media screen and (min-width: 768px ) {
+    #LogoAbouteMe {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -86%!important;
+        margin-right: -16%;
+
+    }
+
+    #oneitemAbout {
+        font-size: 15px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #twoitemAbout {
+        font-size: 15px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #threeitemAbout {
+        font-size: 15px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #fureitemAbout {
+        font-size: 15px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    .asideLeftAbout h2 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px ) {
+
+    body {
+        background-color: #ffffff !important;
+    }
+
+    .asideLeftAbout {
+        position: fixed !important;
+        width: 100% !important;
+        height: 15% !important;
+        background-color: #f3c893;
+        top: 0 !important;
+        left: 0;
+
+    }
+
+    .contentAbout {
         /*display: none;*/
-    /*}*/
+        z-index: 900 !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 45% !important;
+        left: 0 !important;
+        top: 15% !important;
+        padding-bottom: 0 !important;
+        background-color: #fcdcb6 !important;
+        overflow-y: scroll !important;
+    }
 
-
-    /*.asideLeft h2 {*/
+    .asideRightAbout {
         /*display: none;*/
-    /*}*/
-    /*.content p {*/
-        /*text-align: justify;*/
-        /*margin-top: 5%;*/
-        /*margin-right: 5%;*/
-        /*margin-left: 5%;*/
-        /*font-weight: bold;*/
-        /*font-family: IRANSans;*/
-        /*font-size: 15px;*/
-    /*}*/
-    /*.MyVideo {*/
-        /*width: 80%;*/
-        /*!*display: none;*!*/
+        width: 100% !important;
+        height: 40% !important;
+        top: 60% !important;
+        z-index: 1000 !important;
+        background-color: #f3c893;
+        position: absolute !important;
+        right: 0 !important;
+        overflow-y: scroll;
+    }
+
+    #parentLogoAbout {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 73%;
+    }
+
+    .sidenavAbout a {
+        position: absolute;
+    }
+
+    .sidenavAbout .closebtnAbout {
+        position: absolute !important;
+        top: 0 !important;
+        right: 25px !important;
+        font-size: 36px !important;
+        margin-left: 0px !important;
+    }
+
+    #oneitemAbout {
+        top: 27%;
+        left: 10%;
+    }
+
+    #twoitemAbout {
+        top: 27%;
+        left: 20%;
+    }
+
+    #threeitemAbout {
+        top: 27%;
+        left: 30%;
+
+    }
+
+    #fureitemAbout {
+        top: 27%;
+        left: 40%;
+
+    }
+
+    .asideLeftAbout h2 {
+        display: none;
+    }
+
+    .MyVideoAbout {
+        width: 80%;
+        /*margin: 0;*/
+        /*padding: 0;*/
+        display: block;
         /*margin-left: auto;*/
         /*margin-right: auto;*/
-        /*margin-top: 5%;*/
-        /*!*margin-bottom: 20%;*!*/
-    /*}*/
-    /*!*.parentFab {*!*/
-        /*!*display: none;*!*/
-        /*!*height: 10% !important;*!*/
-        /*!*position: absolute;*!*/
-        /*!*right: 0;*!*/
-        /*!*left: auto;*!*/
-        /*!*bottom: -2%;*!*/
-        /*!*text-align: right;*!*/
-        /*!*-webkit-transform: translateY(-50%);*!*/
-        /*!*transform: translateY(-50%);*!*/
-        /*!*width: 710px !important;*!*/
-        /*!*z-index: 1;*!*/
-    /*!*}*!*/
+        top: 10%;
+        /*margin-bottom: 10%;*/
+    }
 
-    /*!*#share {*!*/
-        /*!*position: fixed;*!*/
-        /*!*bottom: 0% !important;*!*/
-        /*!*right: 1%;*!*/
-        /*!*height: 30px;*!*/
-        /*!*width: 30px;*!*/
-        /*!*background-color: orange;*!*/
-        /*!*border-radius: 50%;*!*/
-        /*!*box-shadow: 0 0 6px #878787;*!*/
-        /*!*cursor: pointer;*!*/
-        /*!*z-index: 3;*!*/
-        /*!*background-image: url(http://www.zupimages.net/up/15/27/enby.png);*!*/
-        /*!*background-position: 46% center;*!*/
-        /*!*background-size: 16px auto;*!*/
-        /*!*background-repeat: no-repeat;*!*/
-    /*!*}*!*/
+    .contentAbout p {
+        text-align: justify;
+        margin-top: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-weight: bold;
+        font-family: IRANSans;
+        font-size: 15px;
+    }
 
-    /*!*input:checked ~ #share ~ span {*!*/
-        /*!*box-shadow: 0 0 8px #878787;*!*/
-        /*!*opacity: 1;*!*/
-    /*!*}*!*/
+    .parentFab {
+        display: none;
+    }
 
-    /*!*.iconFab {*!*/
-        /*!*width: 30px !important;*!*/
-        /*!*height: 30px !important;*!*/
-    /*!*}*!*/
+    #shareAbout {
+        display: none;
 
-    /*!*#facebook {*!*/
-        /*!*margin-right: -6%!important;*!*/
-    /*!*}*!*/
+    }
 
-    /*!*#twitter {*!*/
-        /*!*margin-right: -8%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#googleplus {*!*/
-        /*!*margin-right: -10%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#instagram {*!*/
-        /*!*margin-right: -12%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#vero {*!*/
-        /*!*margin-right: -18%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#viber {*!*/
-        /*!*margin-right: -20%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#linkdin {*!*/
-        /*!*margin-right: -29%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#telegram {*!*/
-        /*!*margin-right: -14%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#pinterest {*!*/
-        /*!*margin-right: -16%!important;*!*/
-    /*!*}*!*/
-
-    /*!*#whatsapp {*!*/
-        /*!*margin-right: -17%!important;*!*/
-    /*!*}*!*/
-
-/*}*/
-
-/*@media screen and (min-width: 375px) {*/
-
-/*}*/
-
-/*@media screen and (max-width: 320px) {*/
-    /*#LogoGallery {*/
-        /*width: 16%;*/
-        /*bottom: -92px;*/
-        /*left: -12%;*/
-
-    /*}*/
-/*}*/
+}
+@media screen and (min-width:320px){
+    #LogoAbouteMe {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -71%;
+        margin-right: 5%;
+    }
+}

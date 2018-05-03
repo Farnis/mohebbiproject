@@ -5,25 +5,14 @@
     <title>Title</title>
     <!--CSS-->
     <link rel="stylesheet" href="Page1.css">
-    <link rel="stylesheet" href="Article.css">
-<!--
-    <link rel="stylesheet" href="AbouteMe.css">
--->
-    <!--<link rel="stylesheet" href="Gallery.css">-->
-    <script src="JQ/jquery-3.3.1.min.js"></script>
-<!--
-    <script src="Article.js"></script>
--->
-    <!--<script src="Gallery.js"></script>-->
     <!--bootstrap-->
-    <script src="node_modules/angular/angular.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <script src="Bootstrap/js/bootstrap.bundle.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
-<div id="BodyAbout" style="display: none"></div>
+<div></div>
 <div id="parentAll">
     <div id="Gallery" class="foo Line">
         <img src="IMG/LogoColor/GalleryLogo.png" class="LogoGallery"/>
@@ -96,8 +85,10 @@
 <div id="Div6" class="row col-lg-12"></div>
 <!--LibraryLoding-->
 <script src="JQ/scrollreveal.min.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="JQ/jquery-3.3.1.min.js"></script>
 </body>
-<script src="AboutMe.js"></script>
+</html>
 <script>
     window.sr = ScrollReveal({reset: true});
     // Custom Settings
@@ -197,32 +188,28 @@
 
 </script>
 <script>
-
-       $(document).ready(function () {
-       // onclick Gallery
-       //  $(".item1").click(function () {
-       //      $('.item1').fadeOut();
-       //      $(".item2").fadeOut();
-       //      $(".item3").fadeOut();
-       //      $(".item4").fadeOut();
-       //      $(".item5").fadeOut();
-       //      $(".item6").fadeOut();
-       //      $(".item7").fadeOut();
-       //      $("#Education").fadeOut(1100);
-       //      $("#Article").fadeOut(1400);
-       //      $("#AboutMe").fadeOut(1600);
-       //      $("#Empty-a").fadeOut(1800);
-       //      $("#login").fadeOut(2000);
-       //      $("#Empty-b").fadeOut(2100);
-       //      $("#Empty-c").fadeOut(2400);
-       //      $("#Empty-d").fadeOut(2600);
-       //      $("#Empty-e").fadeOut(2800);
-       //      $("#Gallery").fadeOut(3000);
-       //      $("#Div1").fadeIn(5000);
-       //
-       //
-       //
-       //  });
+    $(document).ready(function () {
+        // onclick Gallery
+        $(".item1").click(function () {
+            $('.item1').fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Education").fadeOut(1100);
+            $("#Article").fadeOut(1400);
+            $("#AboutMe").fadeOut(1600);
+            $("#Empty-a").fadeOut(1800);
+            $("#login").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#Gallery").fadeOut(3000);
+            $("#Div1").fadeIn(5000);
+        });
         // onclick Education
         $(".item2").click(function () {
             $(".item1").fadeOut();
@@ -244,50 +231,50 @@
             $("#Education").fadeOut(3000);
             $("#Div2").fadeIn(5000);
         });
-       // onclick Article
-       //  $(".item3").click(function () {
-       //     $(".item1").fadeOut();
-       //      $(".item2").fadeOut();
-       //     $(".item3").fadeOut();
-       //     $(".item4").fadeOut();
-       //     $(".item5").fadeOut();
-       //     $(".item6").fadeOut();
-       //     $(".item7").fadeOut();
-       //       $("#Gallery").fadeOut(1100);
-       //       $("#Education").fadeOut(1400);
-       //       $("#AboutMe").fadeOut(1600);
-       //       $("#Empty-a").fadeOut(1800);
-       //      $("#login").fadeOut(2000);
-       //      $("#Empty-b").fadeOut(2100);
-       //       $("#Empty-c").fadeOut(2400);
-       //       $("#Empty-d").fadeOut(2600);
-       //       $("#Empty-e").fadeOut(2800);
-       //       $("#Article").fadeOut(3000);
-       //       $("#Div3").fadeIn(5000);
-       //  });
+        // onclick Article
+        $(".item3").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Education").fadeOut(1400);
+            $("#AboutMe").fadeOut(1600);
+            $("#Empty-a").fadeOut(1800);
+            $("#login").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#Article").fadeOut(3000);
+            $("#Div3").fadeIn(5000);
+        });
         // onclick AbouteMe
-        // $(".item4").click(function () {
-        //     $(".item1").fadeOut();
-        //    $(".item2").fadeOut();
-        //    $(".item3").fadeOut();
-        //     $(".item4").fadeOut();
-        //      $(".item5").fadeOut();
-        //     $(".item6").fadeOut();
-        //     $(".item7").fadeOut();
-        //     $("#Gallery").fadeOut(1100);
-        //    $("#Education").fadeOut(1400);
-        //     $("#Article").fadeOut(1600);
-        //     $("#Empty-a").fadeOut(1800);
-        //      $("#login").fadeOut(2000);
-        //      $("#Empty-b").fadeOut(2100);
-        //      $("#Empty-c").fadeOut(2400);
-        //     $("#Empty-d").fadeOut(2600);
-        //     $("#Empty-e").fadeOut(2800);
-        //     $("#AboutMe").fadeOut(3000);
-        //      $("#Div4").fadeIn(5000);
-        // });
+        $(".item4").click(function () {
+            $(".item1").fadeOut();
+            $(".item2").fadeOut();
+            $(".item3").fadeOut();
+            $(".item4").fadeOut();
+            $(".item5").fadeOut();
+            $(".item6").fadeOut();
+            $(".item7").fadeOut();
+            $("#Gallery").fadeOut(1100);
+            $("#Education").fadeOut(1400);
+            $("#Article").fadeOut(1600);
+            $("#Empty-a").fadeOut(1800);
+            $("#login").fadeOut(2000);
+            $("#Empty-b").fadeOut(2100);
+            $("#Empty-c").fadeOut(2400);
+            $("#Empty-d").fadeOut(2600);
+            $("#Empty-e").fadeOut(2800);
+            $("#AboutMe").fadeOut(3000);
+            $("#Div4").fadeIn(5000);
+        });
         // onclick OrderMe
-        $(".item5").click(function () {
+        $(".item5").click( function () {
             $(".item1").fadeOut();
             $(".item2").fadeOut();
             $(".item3").fadeOut();
@@ -351,35 +338,3 @@
         });
     });
 </script>
-<script language="javascript" type="text/javascript">
-    function windowClose() {
-        window.open('', '_parent', '');
-        window.close();
-    }
-</script>
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "10%";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.getElementById("asideLeft").style.marginLeft = "10%";
-        document.getElementById("content").style.marginLeft = "10%";
-        document.getElementById("asideRight").style.width = "26%";
-
-
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("asideLeft").style.marginLeft = "0";
-        document.getElementById("content").style.marginLeft = "0";
-        document.getElementById("asideRight").style.width = "35%";
-    }
-</script>
-<script language="javascript" type="text/javascript">
-    function windowClose() {
-        window.open('', '_parent', '');
-        window.close();
-    }
-</script>
-</html>
