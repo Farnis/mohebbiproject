@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css-->
+    <link rel="stylesheet" href="LogIn.css">
+    <!--Library node-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div id="asideLeftLogin" class="asideLeftLogin">
+        <div id="mySidenavLogin" class="sidenavLogin">
+            <a id="itemClose" href="javascript:void(0)" class="closebtnLogin" onclick="closeNav()">&times;</a>
+            <a id="item1" href="#">About</a>
+            <a id="item2" href="#">Services</a>
+            <a id="item3" href="#">Clients</a>
+            <a id="item4" href="#">Contact</a>
+        </div>
+        <div id="mainLogin">
+                <span id="Open" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #b1c068;"
+                      onclick="openNav()"> &#8285;</span>
+        </div>
+        <div id="parentLogoLogin">
+            <img id="LogoGalleryLogin" src="IMG/LogoColor/LoginLogo.png"/>
+        </div>
+        <h2>Login</h2>
+    </div>
+    <div id="asideRightLogin" class="asideRightLogin">
+
+    </div>
+    <div id="contentLogin" class="contentLogin"> </div>
+
+</div>
+</body>
+</html>
+
+
+<script language="javascript" type="text/javascript">
+    function windowClose() {
+        var window = document.getElementById("LoginPage");
+        window.close();
+    }
+</script>
+<script>
+    var side = document.getElementById("mySidenavLogin");
+    var main = document.getElementById("mainLogin");
+    var Left = document.getElementById("asideLeftLogin");
+    var Center = document.getElementById("contentLogin");
+    var Right = document.getElementById("asideRightLogin");
+    var Close = document.getElementById("itemClose");
+    var oneI = document.getElementById("item1");
+    var twoI = document.getElementById("item2");
+    var threeI = document.getElementById("item3");
+    var fourI = document.getElementById("item4");
+    var open = document.getElementById("Open");
+
+    // var Logo = document.getElementById("parentLogoLogin");
+
+
+    function openNav() {
+        side.style.width = "10%";
+        main.style.marginLeft = "250px";
+        Left.style.marginLeft = "10%";
+        Center.style.marginLeft = "10%";
+        Right.style.width = "36%";
+
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+
+            main.style.marginLeft = "-20%";
+            side.style.width = "100%";
+            side.style.height = "13%";
+            Left.style.marginTop = "15%";
+            Left.style.marginLeft = "0%";
+            Center.style.marginTop = "15%";
+            Center.style.marginLeft = "0%";
+            Right.style.marginTop = "15%";
+            open.style.display = "block";
+            // Logo.style.display = "none";
+
+
+            Close.style.float = "left";
+            Close.style.padding = "0";
+            Close.style.top = "1%";
+            Close.style.left = "91%"
+
+            oneI.style.float = "left";
+            oneI.style.fontSize = "10px";
+
+            twoI.style.float = "left";
+            twoI.style.fontSize = "10px";
+
+            threeI.style.float = "left";
+            threeI.style.fontSize = "10px";
+
+            fourI.style.float = "left";
+            fourI.style.fontSize = "10px";
+
+        }
+        else {
+
+
+        }
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenavLogin").style.width = "0";
+        document.getElementById("mainLogin").style.marginLeft = "0";
+        document.getElementById("asideLeftLogin").style.marginLeft = "0";
+        document.getElementById("contentLogin").style.marginLeft = "0";
+        document.getElementById("asideRightLogin").style.width = "45%";
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            side.style.width = "0";
+            side.style.height = "0";
+            Left.style.marginTop = "0";
+            Center.style.marginTop = "0";
+            Right.style.marginTop = "0";
+            // Logo.style.bottom="95%";
+
+
+        } else {
+
+        }
+    }
+</script>

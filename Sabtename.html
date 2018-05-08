@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css-->
+    <link rel="stylesheet" href="Sabtename.css">
+    <link rel="stylesheet" href="CheckButton.css">
+    <!--Library node-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="JQ/all.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="asideLeftOrderMe" class="asideLeftOrderMe">
+        <div id="mySidenavOrderMe" class="sidenavOrderMe">
+            <a id="itemClose" href="javascript:void(0)" class="closebtnOrderMe" onclick="closeNav()">&times;</a>
+            <a id="item1" href="#">About</a>
+            <a id="item2" href="#">Services</a>
+            <a id="item3" href="#">Clients</a>
+            <a id="item4" href="#">Contact</a>
+        </div>
+        <div id="mainOrderMe">
+                <span id="Open" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #8850a3;"
+                      onclick="openNav()"> &#8285;</span>
+        </div>
+        <div id="parentLogoOrderMe">
+            <img id="LogoGalleryOrderMe" src="IMG/LogoColor/OrderMeLogo.png"/>
+        </div>
+        <h2>OrderMe</h2>
+    </div>
+    <div id="asideRightOrderMe" class="asideRightOrderMe">
+        <br/>
+        <div class="profile">
+            <img src="IMG/Profile.png">
+        </div>
+        <br/>
+        <form class="FormRightLine">
+            <!--Name-->
+            <div class="row col-lg-12">
+
+                <div class="col-6">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>Name</label>
+                </div>
+
+            </div>
+            <br/>
+            <!--Family-->
+            <div class="row col-lg-12">
+
+                <div class="col-6">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>Family</label>
+                </div>
+
+            </div>
+            <br/>
+            <!--Maile-->
+            <div class="row col-lg-12"><br/>
+
+                <div class="col-10">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>Mail</label>
+                </div>
+
+            </div>
+            <br/>
+            <!--City-->
+            <div class="row col-lg-12">
+
+                <div class="col-6">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>City</label>
+                </div>
+
+            </div>
+            <br/>
+            <!--Coll-->
+            <div class="row col-lg-12">
+
+                <div class="col-6">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>Coll</label>
+                </div>
+
+            </div>
+            <br/>
+            <!--Address-->
+            <div class="row col-lg-12">
+
+                <div class="col-10">
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="col-2">
+                    <label>Address</label>
+                </div>
+
+            </div>
+            <br/>
+            <div class="row col-lg-12">
+
+                <div class="col-10">
+                    <textarea></textarea>
+
+                </div>
+                <div class="col-2">
+                    <label>Direction</label>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div id="contentOrderMe" class="contentOrderMe">
+        <form class="col-lg-8 formContent">
+            <div style="direction: ltr;" class="row col-lg-12">
+                <label id="mobileForm" class="col-lg-2 ">Mobile</label>
+                <span id="numberForm" class="col-lg-2 ">+98</span>
+                <input id="numberTwoForm" class="col-lg-7 " type="tel" placeholder="">
+            </div>
+        </form>
+        <form id="FormCheck">
+            <input type="checkbox" name="switch" id="switch"/>
+            <label for="switch" class="switch">
+                <span class="bg"></span>
+            </label>
+        </form><br/><br>
+        <p id="demo">Time</p>
+        <button id="Conferm" onclick="DDDD()">Conferm</button>
+
+    </div>
+<br/>
+    <div class="parentCloseAbout">
+        <input class="closebtnEndOrderMe" type="button" onclick="windowClose();">
+    </div>
+</div>
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">
+    function windowClose() {
+        var window = document.getElementById("OrderMePage");
+        window.close();
+    }
+</script>
+<script>
+    var side = document.getElementById("mySidenavOrderMe");
+    var main = document.getElementById("mainOrderMe");
+    var Left = document.getElementById("asideLeftOrderMe");
+    var Center = document.getElementById("contentOrderMe");
+    var Right = document.getElementById("asideRightOrderMe");
+    var Close = document.getElementById("itemClose");
+    var oneI = document.getElementById("item1");
+    var twoI = document.getElementById("item2");
+    var threeI = document.getElementById("item3");
+    var fourI = document.getElementById("item4");
+    var open = document.getElementById("Open");
+
+    function openNav() {
+        side.style.width = "10%";
+        main.style.marginLeft = "250px";
+        Left.style.marginLeft = "10%";
+        Center.style.marginLeft = "10%";
+        Right.style.width = "36%";
+
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+
+            main.style.marginLeft = "-20%";
+            side.style.width = "100%";
+            side.style.height = "13%";
+            Left.style.marginTop = "15%";
+            Left.style.marginLeft = "0%";
+            Center.style.marginTop = "15%";
+            Center.style.marginLeft = "0%";
+            Right.style.marginTop = "15%";
+            open.style.display = "block";
+            // Logo.style.display = "none";
+
+
+            Close.style.float = "left";
+            Close.style.padding = "0";
+            Close.style.top = "1%";
+            Close.style.left = "91%"
+
+            oneI.style.float = "left";
+            oneI.style.fontSize = "10px";
+
+            twoI.style.float = "left";
+            twoI.style.fontSize = "10px";
+
+            threeI.style.float = "left";
+            threeI.style.fontSize = "10px";
+
+            fourI.style.float = "left";
+            fourI.style.fontSize = "10px";
+
+        }
+        else {
+
+
+        }
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenavOrderMe").style.width = "0";
+        document.getElementById("mainOrderMe").style.marginLeft = "0";
+        document.getElementById("asideLeftOrderMe").style.marginLeft = "0";
+        document.getElementById("contentOrderMe").style.marginLeft = "0";
+        document.getElementById("asideRightOrderMe").style.width = "45%";
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            side.style.width = "0";
+            side.style.height = "0";
+            Left.style.marginTop = "0";
+            Center.style.marginTop = "0";
+            Right.style.marginTop = "0";
+            // Logo.style.bottom="95%";
+
+
+        } else {
+
+        }
+    }
+</script>
+<!--Timer-->
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+            minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>

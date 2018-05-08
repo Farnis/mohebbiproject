@@ -1,0 +1,1061 @@
+/*Left*/
+
+.asideLeftEducation {
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 100vh;
+    background-color: #e2f192;
+}
+
+#LogoGalleryEducation {
+    width: 55%;
+    float: right;
+    position: relative;
+    margin-top: -55%;
+!important;
+    margin-right: -16%;
+
+}
+
+/*SideMenu*/
+.sidenavEducation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f4ffbc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenavEducation a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #020304;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.sidenavEducation a:hover {
+    color: #020304;
+    text-decoration: none;
+}
+
+.sidenavEducation .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mainEducation {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.asideLeftEducation h2 {
+    position: fixed;
+    bottom: 0;
+    color: #b1c068;
+    text-align: center;
+    left: 1%;
+}
+
+/*Content*/
+.contentEducation {
+    padding-bottom: 0;
+    position: absolute;
+    left: 10%;
+    width: 45%;
+    height: 100vh;
+    background-color: #f4ffbd;
+    /*overflow-y: scroll;*/
+}
+
+.closebtnEndEducation {
+
+    position: fixed !important;
+    bottom: 0 !important;
+    left: -19% !important;
+    font-size: 30px !important;
+    margin-left: 50% !important;
+    background-image: url("IMG/CloseIcon/Close-Window-Education.png") !important;
+    background-size: cover !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: none !important;
+    color: #b1c068 !important;
+    background-color: #f4ffbd !important;
+    outline: none !important;
+    cursor: pointer;
+
+}
+
+.closebtnEndEducation:hover {
+    text-decoration: none !important;
+    color: #f4ffbd !important;
+
+}
+
+.closebtnEndEducation:link {
+    border: none !important;
+}
+
+/*ul*/
+
+button {
+    width: 100%;
+    margin-left: 10%;
+    background: none;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.ListOfPackage {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
+    margin-top: 4%;
+    /*height: 600px;*/
+
+}
+
+#parent {
+    height: 750px;
+    overflow-y: scroll !important;
+}
+
+#parent::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+#parent::-webkit-scrollbar-thumb {
+    background-color: #f4ffbd;
+    outline: 1px solid slategray;
+}
+
+ul li {
+    width: 80%;
+    margin-left: 18%;
+    font-family: IRANSans;
+}
+
+/*1-Line*/
+.oneLine {
+    background-color: #a7b462;
+}
+
+#LablePackage {
+    margin: auto;
+    margin-left: 14%;
+    padding: 1%;
+    width: 70%;
+    text-align: center;
+!important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*2-Line*/
+.towLine {
+    background-color: #202413;
+    height: auto;
+    padding-top: 1%;
+}
+
+/*3-Line*/
+.threeLine {
+    background-color: #202413;
+    height: auto;
+}
+
+.towLine h5 {
+    color: #b8b8b8;
+
+}
+
+.threeLine p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #b8b8b8;
+}
+
+#IconSHop {
+    margin-left: 43%;
+}
+
+form {
+    margin-left: 80%;
+}
+
+.L-1 {
+    color: #75ec63b0;
+    font-weight: bold;
+}
+
+.L-2 {
+    color: #ffffff;
+    /*font-weight: bold;*/
+}
+
+/*Right*/
+.asideRightEducation {
+    background-color: #e2f192;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+}
+
+#Signature {
+    color: #e3f190;
+}
+
+table {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+table tr td {
+    font-family: IRANSans;
+    text-align: left;
+    font-weight: bold;
+}
+
+table tr td .VIDEO {
+    height: 146px;
+}
+
+.lablePart {
+    padding-left: 10%;
+    margin-bottom: 0 !important;
+
+}
+
+#ParentTable {
+    height: 800px;
+    overflow-y: scroll;
+}
+
+#ParentTable::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+#ParentTable::-webkit-scrollbar-thumb {
+    background-color: #e2f192;
+    outline: 1px solid slategray;
+}
+
+/*...................................................................................................................*/
+@media screen and (max-height: 450px) {
+    .sidenavEducation {
+        padding-top: 15px;
+    }
+
+    .sidenavEducation a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1913px) {
+    /*Content*/
+    button {
+        width: 100%;
+        margin-left: 10%;
+        background: none;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .ListOfPackage {
+        border: none;
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        margin-top: 4%;
+        /*height: 600px;*/
+
+    }
+
+    #parent {
+        height: 750px;
+        overflow-y: scroll !important;
+    }
+
+    #parent::-webkit-scrollbar {
+        width: 0.5px;
+    }
+
+    #parent::-webkit-scrollbar-thumb {
+        background-color: #f4ffbd;
+        outline: 1px solid slategray;
+    }
+
+    ul li {
+        border: none;
+    !important;
+        width: 80%;
+        margin-left: 18%;
+        font-family: IRANSans;
+    }
+
+    /*1-Line*/
+    .oneLine {
+        background-color: #a7b462;
+    }
+
+    #LablePackage {
+        margin: auto;
+        margin-left: 14%;
+        padding: 1%;
+        width: 70%;
+        text-align: center;
+    !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*2-Line*/
+    .towLine {
+        background-color: #202413;
+        height: auto;
+        padding-top: 1%;
+    }
+
+    /*3-Line*/
+    .threeLine {
+        background-color: #202413;
+        height: auto;
+    }
+
+    .towLine h5 {
+        color: #b8b8b8;
+
+    }
+
+    .threeLine p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #b8b8b8;
+    }
+
+    #IconSHop {
+        margin-left: 30%;
+    }
+
+    form {
+        margin-left: 77%;
+    }
+
+    .L-1 {
+        color: #75ec63b0;
+        font-weight: bold;
+    }
+
+    .L-2 {
+        color: #ffffff;
+        /*font-weight: bold;*/
+    }
+
+    /*CloseButton*/
+    .contentEducation {
+        padding-bottom: 0;
+        position: absolute;
+        left: 10%;
+        width: 45%;
+        height: 100vh;
+        background-color: #f4ffbd;
+        /*overflow-y: scroll;*/
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    /*Contant*/
+    /*ul*/
+    button {
+        width: 100%;
+        margin-left: 10%;
+        background: none;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .ListOfPackage {
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        margin-top: 4%;
+        /*height: 600px;*/
+
+    }
+
+    #parent {
+        height: 750px;
+        overflow-y: scroll !important;
+    }
+
+    #parent::-webkit-scrollbar {
+        width: 0.5px;
+    }
+
+    #parent::-webkit-scrollbar-thumb {
+        background-color: #f4ffbd;
+        outline: 1px solid slategray;
+    }
+
+    ul li {
+        width: 80%;
+        margin-left: 18%;
+        font-family: IRANSans;
+    }
+
+    /*1-Line*/
+    .oneLine {
+        background-color: #a7b462;
+    }
+
+    #LablePackage {
+        margin: auto;
+        margin-left: 14%;
+        padding: 1%;
+        width: 70%;
+        text-align: center;
+    !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*2-Line*/
+    .towLine {
+        background-color: #202413;
+        height: auto;
+        padding-top: 1%;
+    }
+
+    /*3-Line*/
+    .threeLine {
+        background-color: #202413;
+        height: auto;
+    }
+
+    .towLine h5 {
+        color: #b8b8b8;
+        font-size: 22px;
+
+    }
+
+    .threeLine p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #b8b8b8;
+    }
+
+    #IconSHop {
+        margin-left: 30%;
+    }
+
+    form {
+        margin-left: 77%;
+    }
+
+    .L-1 {
+        color: #75ec63b0;
+        font-weight: bold;
+    }
+
+    .L-2 {
+        color: #ffffff;
+        /*font-weight: bold;*/
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+    /*Left*/
+    #LogoGalleryEducation {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -71%;
+        margin-right: -16%;
+    }
+
+    .sidenavEducation a {
+        padding-left: 8px;
+    }
+
+    .asideLeftEducation h2 {
+        font-size: 20px;
+    }
+
+    /*Contant*/
+    button {
+        width: 100%;
+        margin-left: 10%;
+        background: none;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .ListOfPackage {
+        border: none;
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        margin-top: 4%;
+        /*height: 600px;*/
+
+    }
+
+    #parent {
+        height: 750px;
+        overflow-y: scroll !important;
+    }
+
+    #parent::-webkit-scrollbar {
+        width: 0.5px;
+    }
+
+    #parent::-webkit-scrollbar-thumb {
+        background-color: #f4ffbd;
+        outline: 1px solid slategray;
+    }
+
+    ul li {
+        border: none;
+    !important;
+        width: 80%;
+        margin-left: 18%;
+        font-family: IRANSans;
+    }
+
+    /*1-Line*/
+    .oneLine {
+        background-color: #a7b462;
+    }
+
+    #LablePackage {
+        margin: auto;
+        /*margin-left: 14%;*/
+        padding: 1%;
+        width: 100%;
+        text-align: center;
+    !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*2-Line*/
+    .towLine {
+        background-color: #202413;
+        height: auto;
+        padding-top: 1%;
+    }
+
+    /*3-Line*/
+    .threeLine {
+        background-color: #202413;
+        height: auto;
+    }
+
+    .towLine h5 {
+        color: #b8b8b8;
+        font-size: 15px;
+    }
+
+    .threeLine p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #b8b8b8;
+    }
+
+    #IconSHop {
+        margin-left: 1%;
+    }
+
+    form {
+        margin-left: 67%;
+    }
+
+    .L-1 {
+        color: #75ec63b0;
+        font-weight: bold;
+    }
+
+    .L-2 {
+        color: #ffffff;
+        /*font-weight: bold;*/
+    }
+
+    /*CloseButton*/
+    .contentEducation {
+        padding-bottom: 0;
+        position: absolute;
+        left: 10%;
+        width: 45%;
+        height: 100vh;
+        background-color: #f4ffbd;
+        /*overflow-y: scroll;*/
+    }
+
+    /*Right*/
+    table tr td .VIDEO {
+        height: 107px;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    /*Left*/
+    #LogoGalleryEducation {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -85%;
+    !important;
+        margin-right: -16%;
+
+    }
+
+    .asideLeftEducation h2 {
+        font-size: 15px;
+    }
+
+    /*Right*/
+    .sidenavEducation a {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .threeLine p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #b8b8b8;
+    }
+
+    table tr td .VIDEO {
+        height: 88px;
+    }
+
+    .lablePart {
+        padding-left: 5%;
+        margin-bottom: 0 !important;
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 10px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    /*Contant*/
+    form {
+        margin-left: 63%;
+    }
+}
+
+@media screen and (max-width: 425px ) {
+
+    body {
+        background-color: #ffffff !important;
+    }
+
+    /*Left*/
+    #LogoGalleryEducation {
+        width: 55%;
+        /* height: 18%; */
+        float: right;
+        position: relative;
+        margin-top: -85%;
+        margin-right: -4%;
+    }
+
+    .asideLeftEducation {
+        position: fixed !important;
+        width: 100% !important;
+        height: 15% !important;
+        background-color: #e2f192;
+        top: 0 !important;
+        left: 0;
+
+    }
+
+    #parentLogoEducation {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 73%;
+    }
+
+    .sidenavEducation a {
+        position: absolute;
+    }
+
+    #item1 {
+        top: 27%;
+        left: -1%;
+    }
+
+    #item2 {
+        top: 27%;
+        left: 10%;
+    }
+
+    #item3 {
+        top: 27%;
+        left: 25%;
+
+    }
+
+    #item4 {
+        top: 27%;
+        left: 35%;
+
+    }
+
+    .asideLeftEducation h2 {
+        display: none;
+    }
+
+    /*Content*/
+    .contentEducation {
+        width: 100% !important;
+        height: 40% !important;
+        top: 60% !important;
+        z-index: 1000 !important;
+        background-color: #e2f192;
+        position: absolute !important;
+        left: 0;
+        /*right: 0 !important;*/
+        overflow-y: scroll;
+    }
+
+    /*Package*/
+    button {
+        width: 100%;
+        margin-left: 10%;
+        background: none;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .ListOfPackage {
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        margin-top: 4%;
+        /*height: 600px;*/
+
+    }
+
+    #parent {
+        height: 200px;
+        overflow-y: scroll !important;
+    }
+
+    #parent::-webkit-scrollbar {
+        width: 0.5px;
+    }
+
+    #parent::-webkit-scrollbar-thumb {
+        background-color: #f4ffbd;
+        outline: 1px solid slategray;
+    }
+
+    ul li {
+        width: 80%;
+        margin-left: 18%;
+        font-family: IRANSans;
+    }
+
+    /*1-Line package*/
+    .oneLine {
+        background-color: #a7b462;
+    }
+
+    #LablePackage {
+        margin: auto;
+        margin-left: 0%;
+        padding: 1%;
+        width: 100%;
+        text-align: center;
+    !important;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /*2-Line package*/
+    .towLine {
+        background-color: #202413;
+        height: auto;
+        padding-top: 1%;
+    }
+
+    /*3-Line package*/
+    .threeLine {
+        background-color: #202413;
+        height: auto;
+    }
+
+    .towLine h5 {
+        color: #b8b8b8;
+        font-size: 14px;
+        margin-top: 3%;
+    }
+
+    .threeLine p {
+        font-size: 10px;
+        /*font-weight: bold;*/
+        color: #b8b8b8;
+    }
+
+    #IconSHop {
+        margin-left: 24%;
+    }
+
+    form {
+        margin-left: 69%;
+        font-size: 12px;
+    }
+
+    .L-1 {
+        color: #75ec63b0;
+        font-weight: bold;
+    }
+
+    .L-2 {
+        color: #ffffff;
+        /*font-weight: bold;*/
+    }
+
+    /*CloseButton*/
+    .closebtnEndEducation {
+
+        position: fixed !important;
+        bottom: 0 !important;
+        left: -4% !important;
+        font-size: 30px !important;
+        margin-left: 50% !important;
+        background-image: url(IMG/CloseIcon/Close-Window-Education.png) !important;
+        background-size: cover !important;
+        width: 50px !important;
+        height: 50px !important;
+        border: none !important;
+        color: #b1c068 !important;
+        background-color: #e2f192 !important;
+        outline: none !important;
+        cursor: pointer;
+
+    }
+
+    /*Right*/
+    .asideRightEducation {
+        z-index: 900 !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 45% !important;
+        left: 0 !important;
+        top: 15% !important;
+        padding-bottom: 0 !important;
+        background-color: #f4ffbd !important;
+        overflow-y: scroll !important;
+    }
+
+    table {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    table tr td {
+        font-family: IRANSans;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    table tr td .VIDEO {
+        height: 65%;
+    }
+
+    #Signature {
+        color: #f4ffbd;
+    }
+
+    .lablePart {
+        padding-left: 4%;
+        margin-bottom: 0 !important;
+        font-size: 15px;
+
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    #ParentTable {
+        height: 90%;
+        overflow-y: scroll;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    /*Content*/
+    #IconSHop {
+        margin-left: 18%;
+    }
+
+    /*Right*/
+    table {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    table tr td {
+        font-family: IRANSans;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    table tr td .VIDEO {
+        height: 54%;
+    }
+
+    #Signature {
+        color: #f4ffbd;
+    }
+
+    .lablePart {
+        padding-left: 4%;
+        margin-bottom: 0 !important;
+        font-size: 15px;
+
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    #ParentTable {
+        height: 90%;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 320px ) {
+    /*Right*/
+    table {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    table tr td {
+        font-family: IRANSans;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    table tr td .VIDEO {
+        height: 45%;
+    }
+
+    #Signature {
+        color: #f4ffbd;
+    }
+
+    .lablePart {
+        padding-left: 4%;
+        margin-bottom: 0 !important;
+        font-size: 15px;
+
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    #ParentTable {
+        height: 90%;
+        overflow-y: scroll;
+    }
+
+    /*Content*/
+    /*1-Line*/
+    .oneLine {
+        background-color: #a7b462;
+    }
+
+    #LablePackage {
+        margin: auto;
+        margin-left: 0%;
+        padding: 1%;
+        width: 100%;
+        text-align: center;
+    !important;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /*2-Line*/
+    .towLine {
+        background-color: #202413;
+        height: auto;
+        padding-top: 1%;
+    }
+
+    /*3-Line*/
+    .threeLine {
+        background-color: #202413;
+        height: auto;
+    }
+
+    .towLine h5 {
+        color: #b8b8b8;
+        font-size: 14px;
+        margin-top: 3%;
+    }
+
+    .threeLine p {
+        font-size: 10px;
+        /*font-weight: bold;*/
+        color: #b8b8b8;
+    }
+
+    #IconSHop {
+        margin-left: 7%;
+    }
+
+    form {
+        margin-left: 69%;
+        font-size: 12px;
+    }
+
+    .L-1 {
+        color: #75ec63b0;
+        font-weight: bold;
+    }
+
+    .L-2 {
+        color: #ffffff;
+        /*font-weight: bold;*/
+    }
+}

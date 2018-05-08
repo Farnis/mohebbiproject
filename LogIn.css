@@ -1,0 +1,120 @@
+/*Left*/
+
+.asideLeftLogin {
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 100vh;
+    background-color: #d595f3;
+}
+
+#LogoGalleryLogin {
+    width: 55%;
+    float: right;
+    position: relative;
+    margin-top: -55%;
+!important;
+    margin-right: -16%;
+
+}
+
+/*SideMenu*/
+.sidenavLogin {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2d3fc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenavLogin a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #020304;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.sidenavLogin a:hover {
+    color: #020304;
+    text-decoration: none;
+}
+
+.sidenavLogin .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mainLogin {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.asideLeftLogin h2 {
+    position: fixed;
+    bottom: 0;
+    color: #864ea2;
+    text-align: center;
+    left: 1%;
+}
+
+/*Content*/
+.contentLogin {
+    padding-bottom: 0;
+    position: absolute;
+    left: 10%;
+    width: 45%;
+    height: 100vh;
+    background-color: #f2d3fc;
+    /*overflow-y: scroll;*/
+}
+
+.closebtnEndLogin {
+
+    position: fixed !important;
+    bottom: 0 !important;
+    left: -19% !important;
+    font-size: 30px !important;
+    margin-left: 50% !important;
+    background-image: url("IMG/CloseIcon/Close-Window-Login.png") !important;
+    background-size: cover !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: none !important;
+    color: #8a5ba0 !important;
+    background-color: #f2d3fc !important;
+    outline: none !important;
+    cursor: pointer;
+
+
+}
+
+.closebtnEndLogin:hover {
+    text-decoration: none !important;
+    color: #f2d3fc !important;
+
+}
+
+.closebtnEndLogin:link {
+    border: none !important;
+}
+
+/*Right*/
+.asideRightLogin {
+    background-color: #d595f3;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+}
