@@ -8,7 +8,6 @@
     background-color: #d595f3;
 }
 
-
 #LogoGalleryOrderMe {
     width: 7%;
     float: right;
@@ -16,7 +15,6 @@
     margin-top: -6%;
     left: 5%;
 }
-
 
 /*SideMenu*/
 .sidenavOrderMe {
@@ -90,21 +88,18 @@
 }
 
 .closebtnEndOrderMe {
-
-    position: fixed !important;
-    bottom: 0 !important;
-    left: -19% !important;
-    font-size: 30px !important;
-    margin-left: 50% !important;
-    background-image: url("IMG/CloseIcon/Close-Window-Empty-a.png") !important;
-    background-size: cover !important;
-    width: 50px !important;
-    height: 50px !important;
-    border: none !important;
-    color: #8a5ba0 !important;
+    position: fixed;
+    bottom: 0;
+    left: -15%;
+    font-size: 30px;
+    margin-left: 50%;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: block;
     background-color: #f2d3fc !important;
-    outline: none !important;
-    cursor: pointer;
+    background-image: url("IMG/CloseIcon/Close-Window-Empty-a.png") !important;
 
 }
 
@@ -161,10 +156,12 @@
     padding: 7px;
     width: 250px;
     border-radius: 25px;
-    margin-left: 40%;!important;
+    margin-left: 40%;
+!important;
     font-size: 22px;
 }
-#demo{
+
+#demo {
     margin-left: 50%;
     font-weight: bold;
     font-family: IRANSans;
@@ -248,6 +245,19 @@ textarea {
 }
 
 /*..............................................................................*/
+@media screen and (max-width: 1440px) {
+    .sidenavAbout a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #977750;
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
+
+    }
+}
+
 @media screen and (max-width: 1024px) {
     /*Left*/
     #LogoGalleryOrderMe {
@@ -258,15 +268,45 @@ textarea {
         left: 5%;
     }
 
-    .asideLeftOrderMe h2 {
-        position: fixed;
-        bottom: 0;
-        color: #864ea2;
-        text-align: center;
-        left: 1%;
+    #oneitemAbout {
         font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
     }
 
+    #twoitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #threeitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    #fureitemAbout {
+        font-size: 20px;
+    !important;
+        /*padding: 0;!important;*/
+        margin-left: -15%;
+    !important;
+
+    }
+
+    .asideLeftAbout h2 {
+        font-size: 20px;
+    }
 
     /*Contant*/
     #mobileForm {
@@ -294,7 +334,8 @@ textarea {
         margin-left: 25%;
         font-size: 22px;
     }
-    #demo{
+
+    #demo {
         margin-left: 46%;
         font-weight: bold;
         font-family: IRANSans;
@@ -302,7 +343,43 @@ textarea {
 }
 
 @media screen and (max-width: 768px ) {
+    /*leftSide*/
+    .sidenavAbout a {
+        padding: 0;
 
+    }
+
+    #item1 {
+        font-size: 20px;
+    !important;
+        padding-left: 22%;
+
+    }
+
+    #item2 {
+        font-size: 20px;
+    !important;
+        padding-left: 22%;
+
+    }
+
+    #item3 {
+        font-size: 20px;
+    !important;
+        padding-left: 22%;
+
+    }
+
+    #item4 {
+        font-size: 20px;
+    !important;
+        padding-left: 22%;
+
+    }
+
+    .asideLeftAbout h2 {
+        display: none;
+    }
 
     /*CloseButton*/
     .closebtnEndOrderMe {
@@ -311,7 +388,7 @@ textarea {
         left: -4% !important;
         font-size: 30px !important;
         margin-left: 50% !important;
-        background-image: url(IMG/CloseIcon/Close-Window-OrderMe.png) !important;
+        background-image: url(IMG/CloseIcon/Close-Window-Empty-a.png) !important;
         background-size: cover !important;
         width: 50px !important;
         height: 50px !important;
@@ -343,6 +420,7 @@ textarea {
         width: 18%;
         padding-top: 1%;
         font-weight: bold;
+        margin-left: 4%;
         margin-left: -76%;
         background-color: #d595f3;
         border-top-left-radius: 20px !important;
@@ -373,7 +451,8 @@ textarea {
         border-radius: 25px;
         background-color: #a7f289;
     }
-    #demo{
+
+    #demo {
         margin-left: 43%;
         font-weight: bold;
         font-family: IRANSans;
@@ -389,6 +468,22 @@ textarea {
         margin-right: -4%;
         float: right;
         width: 55%;
+    }
+
+    .closebtnEndOrderMe {
+        position: fixed;
+        bottom: 0;
+        left: -15%;
+        font-size: 30px;
+        margin-left: 58%;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border: none;
+        display: block;
+        background-color: #f2d3fc !important;
+        background-image: url("IMG/CloseIcon/Close-Window-Empty-a.png") !important;
+
     }
 
     .asideLeftOrderMe {
@@ -471,7 +566,7 @@ textarea {
         left: -4% !important;
         font-size: 30px !important;
         margin-left: 50% !important;
-        background-image: url(IMG/CloseIcon/Close-Window-OrderMe.png) !important;
+        background-image: url(IMG/CloseIcon/Close-Window-Empty-a.png) !important;
         background-size: cover !important;
         width: 50px !important;
         height: 50px !important;
@@ -532,11 +627,13 @@ textarea {
         border-radius: 25px;
         background-color: #a7f289;
     }
-    #demo{
+
+    #demo {
         margin-left: 45%;
         font-weight: bold;
         font-family: IRANSans;
     }
+
     /*Right*/
     .asideRightOrderMe {
         width: 100% !important;
@@ -646,7 +743,7 @@ textarea {
         left: -4% !important;
         font-size: 30px !important;
         margin-left: 50% !important;
-        background-image: url(IMG/CloseIcon/Close-Window-OrderMe.png) !important;
+        background-image: url(IMG/CloseIcon/Close-Window-Empty-a.png) !important;
         background-size: cover !important;
         width: 50px !important;
         height: 50px !important;
@@ -721,7 +818,8 @@ textarea {
     }
 }
 
-@media screen and (max-width: 320px ) {
+@media screen and (max-width: 320px )
+{
 
     body {
         background-color: #ffffff !important;
@@ -817,7 +915,7 @@ textarea {
         left: -4% !important;
         font-size: 30px !important;
         margin-left: 50% !important;
-        background-image: url(IMG/CloseIcon/Close-Window-OrderMe.png) !important;
+        background-image: url(IMG/CloseIcon/Close-Window-Empty-a.png) !important;
         background-size: cover !important;
         width: 50px !important;
         height: 50px !important;

@@ -5,7 +5,7 @@
     left: 0;
     width: 10%;
     height: 100vh;
-    background-color: #d595f3;
+    background-color: #aaf191;
 }
 
 #LogoGalleryLogin {
@@ -26,7 +26,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #f2d3fc;
+    background-color: #c9ffb4;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -61,10 +61,10 @@
     padding: 16px;
 }
 
-.asideLeftLogin h2 {
+.asideLeftLogin h3 {
     position: fixed;
     bottom: 0;
-    color: #864ea2;
+    color: #689c56;
     text-align: center;
     left: 1%;
 }
@@ -76,7 +76,7 @@
     left: 10%;
     width: 45%;
     height: 100vh;
-    background-color: #f2d3fc;
+    background-color: #c9ffb4;
     /*overflow-y: scroll;*/
 }
 
@@ -92,8 +92,8 @@
     width: 50px !important;
     height: 50px !important;
     border: none !important;
-    color: #8a5ba0 !important;
-    background-color: #f2d3fc !important;
+    color: #689c56 !important;
+    background-color: #c9ffb4 !important;
     outline: none !important;
     cursor: pointer;
 
@@ -102,7 +102,7 @@
 
 .closebtnEndLogin:hover {
     text-decoration: none !important;
-    color: #f2d3fc !important;
+    color: #c9ffb4 !important;
 
 }
 
@@ -112,9 +112,167 @@
 
 /*Right*/
 .asideRightLogin {
-    background-color: #d595f3;
+    background-color: #aaf191;
     position: absolute;
     right: 0;
     width: 45%;
     height: 100vh;
 }
+
+
+
+.CordLogin{
+    /*margin-left: 35%;*/
+    margin-top:30%;
+    text-align: center;
+
+}
+.CordLogin input{
+    width: 50%;
+    outline:#c9ffb4 !important;
+    border: 3px solid #6b9e57;
+    border-radius: 50px;
+    background-color: #c9ffb4;
+    color:#6b9e57 ;
+    padding: 3%;
+}
+.Login{
+    outline:#c9ffb4 !important;
+    background-color: #6b9e57;
+    width: 30%;
+    border: none;
+    height: auto;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    /*margin-left:10%;*/
+    border-radius: 30px;
+}
+@media screen and (max-width: 768px){
+    #LogoGalleryLogin {
+        width: 55%;
+        float: right;
+        position: relative;
+        margin-top: -88%;
+    }
+    .asideLeftLogin h3 {
+        position: fixed;
+        font-size: 23px;
+        bottom: 0;
+        color: #689c56;
+        text-align: center;
+        left: 1%;
+    }
+}
+@media screen and (max-width: 425px ) {
+/*Left*/
+    .asideLeftLogin {
+        position: fixed !important;
+        width: 100% !important;
+        height: 15% !important;
+        background-color: #aaf191;
+        top: 0 !important;
+        left: 0;
+
+    }
+
+    .closebtnEndLogin {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: -7% !important;
+        /* margin-top: 88vh; */
+        font-size: 30px !important;
+        margin-left: 50% !important;
+        background-image: url(IMG/CloseIcon/Close-Window-LogIn.png) !important;
+        background-size: cover !important;
+        width: 50px !important;
+        height: 50px !important;
+        border: none !important;
+        color: #689c56 !important;
+        background-color: #c9ffb4 !important;
+    }
+    #LogoGalleryLogin {
+        width: 55%;
+        float: right;
+        position: relative;
+        margin-top: -80%;
+    }
+
+    .LoginLogin {
+        height: auto;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        width: 80% !important;
+        height: 50% !important;
+        overflow-y: scroll !important;
+        font-family: IRANSans;
+        font-weight: bold;
+    }
+/*COntant*/
+    .contentLogin {
+        width: 100% !important;
+        height: 85% !important;
+        top: 15% !important;
+        z-index: 1000 !important;
+        position: absolute !important;
+        left: 0 !important;
+        overflow-y: scroll;
+        background-color: #c9ffb4;
+
+    }
+/*Left*/
+    .asideRightLogin {
+        display: none;
+        z-index: 900 !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 40% !important;
+        left: 0 !important;
+        top: 15% !important;
+        padding-bottom: 0 !important;
+        overflow-y: scroll !important;
+        background-color: #aaf191 !important;
+    }
+
+    #parentLogoLogin {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 69%;
+    }
+
+    .sidenavLogin a {
+        position: absolute;
+    }
+
+    #item1 {
+        top: 27%;
+        left: -1%;
+    }
+
+    #item2 {
+        top: 27%;
+        left: 10%;
+    }
+
+    #item3 {
+        top: 27%;
+        left: 25%;
+
+    }
+
+    #item4 {
+        top: 27%;
+        left: 35%;
+
+    }
+
+    .asideLeftLogin h2 {
+        display: none;
+    }
+
+}
+

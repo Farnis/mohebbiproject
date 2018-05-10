@@ -6,12 +6,15 @@
     <!--css-->
     <link rel="stylesheet" href="LogIn.css">
     <!--Library node-->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="JQ/all.js"></script>
 </head>
+
 <body>
 <div class="container-fluid">
     <div id="asideLeftLogin" class="asideLeftLogin">
@@ -23,19 +26,33 @@
             <a id="item4" href="#">Contact</a>
         </div>
         <div id="mainLogin">
-                <span id="Open" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color: #b1c068;"
+                <span id="Open" style="font-size:30px;cursor:pointer;font-weight: bold;height: 150px;color:#6b9e57;"
                       onclick="openNav()"> &#8285;</span>
         </div>
         <div id="parentLogoLogin">
             <img id="LogoGalleryLogin" src="IMG/LogoColor/LoginLogo.png"/>
         </div>
-        <h2>Login</h2>
+        <h3>LogIn</h3>
     </div>
     <div id="asideRightLogin" class="asideRightLogin">
 
     </div>
-    <div id="contentLogin" class="contentLogin"> </div>
+    <div id="contentLogin" class="contentLogin">
+    <!--<div class="CircleLogo">-->
+    <!--<img src="IMG/LogoColor/LogInLogo.png">-->
+    <!--</div>-->
+        <br/>
+        <div class="CordLogin">
+        <input type="tel" placeholder="PhonNumber">
+        <br/><br/>
+        <button class="Login">ورود</button>
+        </div>
+        <br/>
+        <div class="parentCloseAbout">
+            <input class="closebtnEndLogin" type="button" onclick="windowClose();">
+        </div>
 
+</div>
 </div>
 </body>
 </html>
@@ -88,7 +105,7 @@
             Close.style.float = "left";
             Close.style.padding = "0";
             Close.style.top = "1%";
-            Close.style.left = "91%"
+            Close.style.left = "91%";
 
             oneI.style.float = "left";
             oneI.style.fontSize = "10px";

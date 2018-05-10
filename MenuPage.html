@@ -11,6 +11,9 @@
     <script src="Bootstrap/js/bootstrap.bundle.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
+<style>
+
+</style>
 <body>
 <div></div>
 <div id="parentAll">
@@ -39,42 +42,41 @@
     </div>
     <div id="Empty-e" class="foo Line">
         <div class="parentFab">
-            <input type="checkbox" id="share">
-            <label title="Share" for="share" id="share"></label>
-            <span title="facebook" id="facebook"></span>
-            <span title="twitter" id="twitter"></span>
-            <span title="Google +" id="googleplus"></span>
-            <span title="instagram" id="instagram"></span>
-            <span title="vero" id="vero"></span>
-            <span title="viber" id="viber"></span>
-            <span title="linkdin" id="linkdin"></span>
-            <span title="telegram" id="telegram"></span>
-            <span title="pinterest" id="pinterest"></span>
-            <span title="what's app" id="whatsapp"></span>
+            <input type="checkbox" id="share1">
+            <label title="Share" for="share1" id="share"></label>
+            <span class="iconFab" title="facebook" id="facebook"></span>
+            <span class="iconFab" title="twitter" id="twitter"></span>
+            <span class="iconFab" title="Google +" id="googleplus"></span>
+            <span class="iconFab" title="instagram" id="instagram"></span>
+            <span class="iconFab" title="vero" id="vero"></span>
+            <span class="iconFab" title="viber" id="viber"></span>
+            <span class="iconFab" title="linkdin" id="linkdin"></span>
+            <span class="iconFab" title="telegram" id="telegram"></span>
+            <span class="iconFab" title="pinterest" id="pinterest"></span>
+            <span class="iconFab" title="whatsapp" id="whatsapp"></span>
         </div>
     </div>
 </div>
-<div id="ParentImage">
-    <div>
-        <img src="IMG/Gallery.png" class="LineImage item1"/>
+<div class="parentImageMenu">
+    <div class="oneLine img">
+
     </div>
-    <div>
-        <img src="IMG/Education.png" class="LineImage item2"/>
+    <div class="TwoLine img">
+
     </div>
-    <div>
-        <img src="IMG/Article.png" class="LineImage item3"/>
+    <div class="threeLine img">
+
     </div>
-    <div>
-        <img src="IMG/AbautMe.png" class="LineImage item4"/>
+    <div class="fourLine img">
+
     </div>
-    <div>
-        <img src="IMG/SaveOrderMe.png" class="LineImage item5"/>
+    <div class="fiveLine img">
+
     </div>
-    <div>
-        <img src="IMG/LogIn.png" class="LineImage item6"/>
+    <div class="sixLine img">
+
     </div>
-    <div>
-        <img src="IMG/YesOrNo2.png" class="LineImage item7"/>
+    <div class="sevenLine img">
     </div>
 </div>
 
@@ -85,8 +87,7 @@
 <div id="Div5" class="row col-lg-12"></div>
 <div id="Div6" class="row col-lg-12"></div>
 <!--LibraryLoding-->
-<!--<script src="JQ/scrollreveal.min.js"></script>-->
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="JQ/scrollreveal.min.js"></script>
 <script src="node_modules/angular/angular.js"></script>
 <script src="JQ/jquery-3.3.1.min.js"></script>
 </body>
@@ -135,53 +136,53 @@
         duration: 10000,
     });
     // IMG LODING
-    sr.reveal('.LineImage', {
+    sr.reveal('.img', {
         // viewOffset: { top: 100, right: 50, bottom: 30, left: 0 },
-        origin: 'bottom',
+        origin: 'left',
         delay: 3500,
         duration: 2000,
     });
 </script>
 <script>
     // HOVER BY IMG
-    $('.item1').hover(function () {
+    $('.oneLine').hover(function () {
         $(".LogoGallery").show("fast");
     }, function () {
         $(".LogoGallery ").hide("fast");
     });
     // ..........................
-    $('.item2').hover(function () {
+    $('.TwoLine').hover(function () {
         $(".LogoEducation").show("fast");
     }, function () {
         $(".LogoEducation ").hide("fast");
     });
     // ..........................
-    $('.item3').hover(function () {
+    $('.threeLine').hover(function () {
         $(".LogoArticle").show("fast");
     }, function () {
         $(".LogoArticle ").hide("fast");
     });
     // ..........................
-    $('.item4').hover(function () {
+    $('.fourLine').hover(function () {
         $(".LogoMe").show("fast");
     }, function () {
         $(".LogoMe ").hide("fast");
 
     });
     // ..........................
-    $('.item5').hover(function () {
+    $('.fiveLine').hover(function () {
         $(".LogoEmty-a").show("fast");
     }, function () {
         $(".LogoEmty-a ").hide("fast");
 
     });
-    $('.item6').hover(function () {
+    $('.sixLine').hover(function () {
         $(".LogoLogIn").show("fast");
     }, function () {
         $(".LogoLogIn ").hide("fast");
 
     });
-    $('.item7').hover(function () {
+    $('.sevenLine').hover(function () {
         $(".LogoYesOrNo").show("fast");
     }, function () {
         $(".LogoYesOrNo ").hide("fast");
@@ -192,14 +193,14 @@
 <script>
     $(document).ready(function () {
         // onclick Gallery
-        $(".item1").click(function () {
-            $('.item1').fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".oneLine").click(function () {
+            $('.oneLine').fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Education").fadeOut(1100);
             $("#Article").fadeOut(1400);
             $("#AboutMe").fadeOut(1600);
@@ -213,14 +214,14 @@
             $("#Div1").fadeIn(5000);
         });
         // onclick Education
-        $(".item2").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".TwoLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Article").fadeOut(1400);
             $("#AboutMe").fadeOut(1600);
@@ -234,14 +235,14 @@
             $("#Div2").fadeIn(5000);
         });
         // onclick Article
-        $(".item3").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".threeLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Education").fadeOut(1400);
             $("#AboutMe").fadeOut(1600);
@@ -255,14 +256,14 @@
             $("#Div3").fadeIn(5000);
         });
         // onclick AbouteMe
-        $(".item4").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".fourLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Education").fadeOut(1400);
             $("#Article").fadeOut(1600);
@@ -276,14 +277,14 @@
             $("#Div4").fadeIn(5000);
         });
         // onclick OrderMe
-        $(".item5").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".fiveLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Education").fadeOut(1400);
             $("#Article").fadeOut(1600);
@@ -297,14 +298,14 @@
             $("#Div5").fadeIn(5000);
         });
         // onclick Log in
-        $(".item6").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".sixLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Education").fadeOut(1400);
             $("#Article").fadeOut(1600);
@@ -318,14 +319,14 @@
             $("#Div6").fadeIn(5000);
         });
         // onclick Log in
-        $(".item7").click(function () {
-            $(".item1").fadeOut();
-            $(".item2").fadeOut();
-            $(".item3").fadeOut();
-            $(".item4").fadeOut();
-            $(".item5").fadeOut();
-            $(".item6").fadeOut();
-            $(".item7").fadeOut();
+        $(".sevenLine").click(function () {
+            $(".oneLine").fadeOut();
+            $(".TwoLine").fadeOut();
+            $(".threeLine").fadeOut();
+            $(".fourLine").fadeOut();
+            $(".fiveLine").fadeOut();
+            $(".sixLine").fadeOut();
+            $(".sevenLine").fadeOut();
             $("#Gallery").fadeOut(1100);
             $("#Education").fadeOut(1400);
             $("#Article").fadeOut(1600);

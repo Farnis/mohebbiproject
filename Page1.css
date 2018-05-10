@@ -1,81 +1,138 @@
 
-body{
+body {
     margin: auto;
     background-image: url("IMG/BackgroundHomemmmmm.jpg");
     background-size: cover;
 }
-#parentAll{
+
+/*BODY DIV*/
+#parentAll {
     width: 100%;
-    height:100%;
+    height: 100%;
     margin: auto;
     z-index: 900;
 
 }
+
 .foo {
-    min-height:100vh;
+    min-height: 100vh;
     color: white;
     text-transform: uppercase;
 }
-.Line{
-    width:10%;
-    height: 100%;
-    margin: auto;
-}
-#ParentImage{
-    z-index: 1000;
-    position: fixed;
-    top: 200px;
 
-}
-.LineImage{
-    width:10%;
+.Line {
+    width: 10%;
     height: 100%;
     margin: auto;
-    float: left;
-    z-index: 1000;
-    /*width: 149px;*/
-    /*margin: auto;*/
 }
-#Gallery{
+
+#parentAll img {
+    display: none;
+    height: 50%;
+    width: 52%;
+    position: relative;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+
+#Gallery {
     float: left;
     background-color: #94f4e9;
 }
-#Education{
+
+#Education {
     float: left;
     background-color: #e3f190;
 }
-#Article{
+
+#Article {
     float: left;
     background-color: #8fc5f3
 }
-#AboutMe{
+
+#AboutMe {
     float: left;
     background-color: #f4c692
 }
-#Empty-a{
+
+#Empty-a {
     background-color: #d695f3;
     float: left;
 }
-#login{
+
+#login {
     float: left;
     background-color: #aaf191;
 }
-#Empty-b{
+
+#Empty-b {
     background-color: #f29e93;
     float: left;
 }
-#Empty-c{
+
+#Empty-c {
     background-color: #8fbcf3;
     float: left;
 }
-#Empty-d{
+
+#Empty-d {
     background-color: #f4d092;
     float: left;
 }
-#Empty-e{
+
+#Empty-e {
     background-color: #94f4e9;
     float: left;
 }
+
+/*ImageLoding*/
+.parentImageMenu {
+    width: 100%;
+    height: 54%;
+    position: fixed;
+    top: 35%;
+    z-index: 1;
+}
+
+.img {
+
+    width: 10%;
+    height: 256px;
+    float: left;
+    background-size: cover;
+}
+
+.oneLine {
+    display: block;
+    background-image: url("IMG/Gallery.png");
+    z-index: -1;
+}
+
+.TwoLine {
+    background-image: url("IMG/Education.png");
+}
+
+.threeLine {
+    background-image: url("IMG/Article.png");
+}
+
+.fourLine {
+    background-image: url("IMG/AbautMe.png");
+}
+
+.fiveLine {
+    background-image: url("IMG/SaveOrderMe.png");
+}
+
+.sixLine {
+    background-image: url("IMG/LogIn.png");
+}
+
+.sevenLine {
+    background-image: url("IMG/YesOrNo2.png");
+}
+
+/*PageS Galery Arti*/
 #Div1 {
     background-color: #94f4e9;
     width: 100%;
@@ -86,6 +143,7 @@ body{
     display: none;
     margin: auto;
 }
+
 #Div2 {
     background-color: #e3f190;
     width: 100%;
@@ -96,6 +154,7 @@ body{
     display: none;
     margin: auto;
 }
+
 #Div3 {
     background-color: #8fc5f3;
     width: 100%;
@@ -106,6 +165,7 @@ body{
     display: none;
     margin: auto;
 }
+
 #Div4 {
     background-color: #f4c692;
     width: 100%;
@@ -116,6 +176,7 @@ body{
     display: none;
     margin: auto;
 }
+
 #Div5 {
     background-color: #d695f3;
     width: 100%;
@@ -127,6 +188,7 @@ body{
     margin: auto;
 
 }
+
 #Div6 {
     background-color: #aaf191;
     width: 100%;
@@ -137,16 +199,9 @@ body{
     display: none;
     margin: auto;
 }
-#parentAll img{
-    display: none;
-    height: 50%;
-    width: 52%;
-    position: relative;
-    margin-left: -10%;
-    margin-top: -10%;
-}
-/*fabFlatingActionBar*/
-.parentFab{
+
+/*FabFlout*/
+.parentFab {
     position: fixed;
     right: 0;
     bottom: 0px;
@@ -158,6 +213,7 @@ body{
     left: auto;
     width: 710px !important;
 }
+
 #share {
     position: fixed;
     bottom: 2%;
@@ -170,13 +226,15 @@ body{
     cursor: pointer;
     z-index: 3;
     background-image: url(http://www.zupimages.net/up/15/27/enby.png);
-    background-position: 46% center ;
-    background-size:  16px auto;
+    background-position: 46% center;
+    background-size: 16px auto;
     background-repeat: no-repeat;
 }
+
 input {
     display: none;
 }
+
 #share ~ span {
     z-index: 2;
     position: absolute;
@@ -189,168 +247,555 @@ input {
     transition: 0.5s ease;
     cursor: pointer;
 }
+
 input:checked ~ #share ~ span {
     box-shadow: 0 0 8px #878787;
     opacity: 1;
 }
+
 #facebook {
     background: #DD4B39 url("IMG/Social Networks/Facebook.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #facebook {
     bottom: 90px;
 }
+
 #twitter {
     background: #2AA9E0 url("IMG/Social Networks/Twitter.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #twitter {
     bottom: 140px;
 }
+
 #googleplus {
     background: #DD4B39 url("IMG/Social Networks/Gogleplus.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #googleplus {
     bottom: 190px;
 }
+
 #instagram {
     background: #a0a0a0 url("IMG/Social Networks/Instagram.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #instagram {
     bottom: 240px;
 }
+
 #telegram {
     background: #a0a0a0 url("IMG/Social Networks/Telegram.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #telegram {
     bottom: 290px;
 }
+
 #pinterest {
     background: #a0a0a0 url("IMG/Social Networks/Pinterest.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #pinterest {
     bottom: 340px;
 }
+
 #vero {
     background: #a0a0a0 url("IMG/Social Networks/Vero.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #vero {
     bottom: 390px;
 }
+
 #viber {
     background: #a0a0a0 url("IMG/Social Networks/Viber.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #viber {
     bottom: 440px;
 }
+
 #whatsapp {
     background: #a0a0a0 url("IMG/Social Networks/Whatsapp.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #whatsapp {
     bottom: 490px;
 }
+
 #linkdin {
     background: #a0a0a0 url("IMG/Social Networks/Linkdin.png") center no-repeat;
 }
+
 input:checked ~ #share ~ #linkdin {
     bottom: 540px;
 }
 
 /*.........................................*/
+@media only screen and (max-width: 1024px) {
+    .img {
+        margin-left: -24px;
+        width: 12%;
+        height: 256px;
+        float: left;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .foo {
+        min-height: 24vh;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .Line {
+        width: 100%;
+        height: 10%;
+        margin: auto;
+    }
+
+    .parentImageMenu {
+        width: 100%;
+        height: 40%;
+        margin-top: -25%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .img {
+
+        width: 31%;
+        height: 24vh;
+        float: none;
+        background-size: cover;
+    }
+
+    .oneLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/gallery.png");
+    }
+
+    .TwoLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/educationR.png");
+    }
+
+    .threeLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/articleR.png");
+    }
+
+    .fourLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/abuteMe.png");
+    }
+
+    .fiveLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/OrderMe.png");
+    }
+
+    .sixLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/loginR.png");
+    }
+
+    .sevenLine {
+        background-image: url("IMG/ResponsiveImgMenu/yesornoR.png");
+    }
+
+    #parentAll img {
+        display: none;
+        width: 73px;
+        position: relative;
+        margin-left: 90%;
+        margin-top: 0;
+    }
+
+    #Gallery, #Education, #Article, #AboutMe, #Empty-a, #login, #Empty-b, #Empty-c, #Empty-d, #Empty-e {
+        float: none;
+
+    }
+    /*Fab*/
+    /*Fab*/
+    #share {
+        position: fixed;
+        bottom: 0% !important;
+        right: 1%;
+        height: 40px;
+        width: 40px;
+        background-color:#94f4e9;
+        border-radius: 50%;
+        box-shadow: 0 0 6px #878787;
+        cursor: pointer;
+        z-index: 3;
+        background-image: url(http://www.zupimages.net/up/15/27/enby.png);
+        background-position: 46% center;
+        background-size: 16px auto;
+        background-repeat: no-repeat;
+    }
+
+    #share ~ span {
+        width: 30px;
+        height: 30px;
+    }
+
+    input:checked ~ #share ~ #facebook {
+        right: 62px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #twitter {
+        right: 61px;
+        bottom: 48%
+    }
+
+    input:checked ~ #share ~ #googleplus {
+        right: 108px;
+        bottom: 51%;
+    }
+
+    input:checked ~ #share ~ #vero {
+        right: 229px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #viber {
+        right: 188px;
+        bottom: 49%;
+    }
+
+    input:checked ~ #share ~ #instagram {
+        right: 14px;
+        bottom: 49%;
+    }
+
+    input:checked ~ #share ~ #linkdin {
+        right: 108px;
+        bottom: 12%;
+    }
+
+    input:checked ~ #share ~ #telegram {
+        right: 150px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #pinterest {
+        right: 189px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #whatsapp {
+        right: 151px;
+        bottom: 49%;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .foo {
-        min-height:20vh;
+        min-height: 20vh;
         color: white;
         text-transform: uppercase;
     }
-    .Line{
-        width:100%;
+
+    .Line {
+        width: 100%;
         height: 10%;
         margin: auto;
     }
 
-    #ParentImage{
-        z-index: 1000;
-        position: absolute;
-        top: 0px;
-
+    .parentImageMenu {
+        width: 100%;
+        height: 40%;
+        margin-top: -45%;
+        position: fixed;
+        z-index: 1;
     }
-    .LineImage{
+
+    .img {
+/*z-index: 1000;*/
+        width:100%;
+        height: 14.2vh;
         float: none;
-        margin-top: -2%;
-        margin-left: 40%;
-        width: 20%;
-        /*height:30vh;*/
-        /*margin: auto;*/
+        margin-left: 0;
+        background-size: cover;
     }
-    #a-image img{
-        background-image: url("IMG/testjpg/629qyO.jpg");
+    .oneLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackGallery.png");
     }
-    /*.item6{*/
-    /*margin-top: -1% !important;*/
-    /*}*/
 
-    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+    .TwoLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackEgucation.png");
+    }
+
+    .threeLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackArticle.png");
+    }
+
+    .fourLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackAboutMe.png");
+    }
+
+    .fiveLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackOrderMe.png");
+    }
+
+    .sixLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackLogIn.png");
+    }
+
+    .sevenLine {
+        background-image: url("IMG/ResponsiveImgMenu/BackYesorNo.png");
+    }
+
+    #parentAll img {
+        display: none;
+        width: 73px;
+        position: relative;
+        margin-left: 360px;
+        margin-top: 0;
+    }
+
+    #Gallery, #Education, #Article, #AboutMe, #Empty-a, #login, #Empty-b, #Empty-c, #Empty-d, #Empty-e {
         float: none;
+       background: none;
 
+
+    }
+    /*Fab*/
+    #share {
+        z-index: 3;
+        position: fixed;
+        bottom: 0% !important;
+        right: 1%;
+        height: 40px;
+        width: 40px;
+        background-color:#94f4e9;
+        border-radius: 50%;
+        box-shadow: 0 0 6px #878787;
+        cursor: pointer;
+        background-image: url(http://www.zupimages.net/up/15/27/enby.png);
+        background-position: 46% center;
+        background-size: 16px auto;
+        background-repeat: no-repeat;
+    }
+
+    #share ~ span {
+        width: 30px;
+        height: 30px;
+    }
+
+    input:checked ~ #share ~ #facebook {
+        right: 62px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #twitter {
+        right: 61px;
+        bottom: 48%
+    }
+
+    input:checked ~ #share ~ #googleplus {
+        right: 108px;
+        bottom: 51%;
+    }
+
+    input:checked ~ #share ~ #vero {
+        right: 229px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #viber {
+        right: 188px;
+        bottom: 49%;
+    }
+
+    input:checked ~ #share ~ #instagram {
+        right: 14px;
+        bottom: 49%;
+    }
+
+    input:checked ~ #share ~ #linkdin {
+        right: 108px;
+        bottom: 12%;
+    }
+
+    input:checked ~ #share ~ #telegram {
+        right: 150px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #pinterest {
+        right: 189px;
+        bottom: 13%;
+    }
+
+    input:checked ~ #share ~ #whatsapp {
+        right: 151px;
+        bottom: 49%;
     }
 }
+
 @media only screen and (max-width: 375px) {
     .foo {
-        min-height:20vh;
+        min-height: 20vh;
         color: white;
         text-transform: uppercase;
     }
-    .Line{
-        width:100%;
+
+    .Line {
+        width: 100%;
         height: 10%;
         margin: auto;
     }
-    #ParentImage{
-        z-index: 1000;
-        position: absolute;
-        top: 0px;
 
-    }
-    .LineImage{
-        float: none;
-        margin-top: 1%;
-        margin-left: 40%;
-        width: 20%
-        /*margin: auto;*/
+    .parentImageMenu {
+        width: 100%;
+        height: 40%;
+        margin-top: -51%;
+        position: fixed;
+        z-index: 1;
     }
 
-    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+    .img {
+
+        width:100%;
+        height: 14.2vh;
         float: none;
+        margin-left: 0;
+        background-size: cover;
+    }
+    .oneLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackGallery.png");
+    }
+
+    .TwoLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackEgucation.png");
+    }
+
+    .threeLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackArticle.png");
+    }
+
+    .fourLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackAboutMe.png");
+    }
+
+    .fiveLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackOrderMe.png");
+    }
+
+    .sixLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackLogIn.png");
+    }
+
+    .sevenLine {
+        background-image: url("IMG/ResponsiveImgMenu/BackYesorNo.png");
+    }
+    #parentAll img {
+        display: none;
+        width: 18%;
+        position: relative;
+        margin-left: 360px;
+
+    }
+
+    #Gallery, #Education, #Article, #AboutMe, #Empty-a, #login, #Empty-b, #Empty-c, #Empty-d, #Empty-e {
+        float: none;
+        background: none;
 
     }
 }
-@media only screen and (max-width: 320px) {
+
+@media only screen and (max-width: 320px) and  (max-height: 546px) {
     .foo {
-        min-height:15vh;
+        min-height: 20vh;
         color: white;
         text-transform: uppercase;
     }
-    .Line{
-        width:100%;
+
+    .Line {
+        width: 100%;
         /*height: 5%;*/
         margin: auto;
     }
-    #ParentImage{
-        /*z-index: 1000;*/
-        position: absolute;
-        top: 0px;
 
-    }
-    .LineImage{
-        float: none;
-        margin-top: -2%;
-        margin-left: 40%;
-        width: 20%;
-        /*height:30vh;*/
-        /*margin: auto;*/
+    .parentImageMenu {
+        width: 100%;
+        height: 40%;
+        margin-top: -60%;
+        position: fixed;
+        z-index: 1;
     }
 
-    #Gallery,#Education,#Article,#AboutMe,#Empty-a,#login,#Empty-b,#Empty-c,#Empty-d,#Empty-e{
+    .img {
+
+        width:100%;
+        height: 14.2vh;
         float: none;
+        margin-left: 0;
+        background-size: cover;
+    }
+    .oneLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackGallery.png");
+    }
+
+    .TwoLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackEgucation.png");
+    }
+
+    .threeLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackArticle.png");
+    }
+
+    .fourLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackAboutMe.png");
+    }
+
+    .fiveLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackOrderMe.png");
+    }
+
+    .sixLine {
+        display: block;
+        background-image: url("IMG/ResponsiveImgMenu/BackLogIn.png");
+    }
+
+    .sevenLine {
+        background-image: url("IMG/ResponsiveImgMenu/BackYesorNo.png");
+    }
+
+    #parentAll img {
+        display: none;
+        width: 18%;
+        position: relative;
+        margin-left: 360px;
+
+    }
+
+    #Gallery, #Education, #Article, #AboutMe, #Empty-a, #login, #Empty-b, #Empty-c, #Empty-d, #Empty-e {
+        float: none;
+        background: none;
 
     }
 }

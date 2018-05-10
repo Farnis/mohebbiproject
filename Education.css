@@ -61,7 +61,7 @@
     padding: 16px;
 }
 
-.asideLeftEducation h2 {
+.asideLeftEducation h3 {
     position: fixed;
     bottom: 0;
     color: #b1c068;
@@ -191,7 +191,7 @@ ul li {
 }
 
 #IconSHop {
-    margin-left: 43%;
+    margin-left: 42%;
 }
 
 form {
@@ -231,7 +231,14 @@ table tr td {
     text-align: left;
     font-weight: bold;
 }
+video{
+    background:transparent url('IMG/poster.png') no-repeat 0 0;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 
+}
 table tr td .VIDEO {
     height: 146px;
 }
@@ -267,122 +274,9 @@ table tr td .VIDEO {
     }
 }
 
-@media screen and (min-width: 1913px) {
-    /*Content*/
-    button {
-        width: 100%;
-        margin-left: 10%;
-        background: none;
-        border: none;
-        outline: none !important;
-        cursor: pointer;
-    }
 
-    .ListOfPackage {
-        border: none;
-        padding: 0;
-        width: 100%;
-        margin: auto;
-        list-style-type: none;
-        margin-top: 4%;
-        /*height: 600px;*/
 
-    }
-
-    #parent {
-        height: 750px;
-        overflow-y: scroll !important;
-    }
-
-    #parent::-webkit-scrollbar {
-        width: 0.5px;
-    }
-
-    #parent::-webkit-scrollbar-thumb {
-        background-color: #f4ffbd;
-        outline: 1px solid slategray;
-    }
-
-    ul li {
-        border: none;
-    !important;
-        width: 80%;
-        margin-left: 18%;
-        font-family: IRANSans;
-    }
-
-    /*1-Line*/
-    .oneLine {
-        background-color: #a7b462;
-    }
-
-    #LablePackage {
-        margin: auto;
-        margin-left: 14%;
-        padding: 1%;
-        width: 70%;
-        text-align: center;
-    !important;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    /*2-Line*/
-    .towLine {
-        background-color: #202413;
-        height: auto;
-        padding-top: 1%;
-    }
-
-    /*3-Line*/
-    .threeLine {
-        background-color: #202413;
-        height: auto;
-    }
-
-    .towLine h5 {
-        color: #b8b8b8;
-
-    }
-
-    .threeLine p {
-        font-size: 15px;
-        font-weight: bold;
-        color: #b8b8b8;
-    }
-
-    #IconSHop {
-        margin-left: 30%;
-    }
-
-    form {
-        margin-left: 77%;
-    }
-
-    .L-1 {
-        color: #75ec63b0;
-        font-weight: bold;
-    }
-
-    .L-2 {
-        color: #ffffff;
-        /*font-weight: bold;*/
-    }
-
-    /*CloseButton*/
-    .contentEducation {
-        padding-bottom: 0;
-        position: absolute;
-        left: 10%;
-        width: 45%;
-        height: 100vh;
-        background-color: #f4ffbd;
-        /*overflow-y: scroll;*/
-    }
-
-}
-
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     /*Contant*/
     /*ul*/
     button {
@@ -466,7 +360,7 @@ table tr td .VIDEO {
     }
 
     #IconSHop {
-        margin-left: 30%;
+        margin-left: 32%;
     }
 
     form {
@@ -499,7 +393,7 @@ table tr td .VIDEO {
         padding-left: 8px;
     }
 
-    .asideLeftEducation h2 {
+    .asideLeftEducation h3 {
         font-size: 20px;
     }
 
@@ -575,10 +469,10 @@ table tr td .VIDEO {
         height: auto;
     }
 
-    .towLine h5 {
-        color: #b8b8b8;
-        font-size: 15px;
-    }
+    /*.towLine h5 {*/
+        /*color: #b8b8b8;*/
+        /*font-size: 18px;*/
+    /*}*/
 
     .threeLine p {
         font-size: 15px;
@@ -634,7 +528,7 @@ table tr td .VIDEO {
 
     }
 
-    .asideLeftEducation h2 {
+    .asideLeftEducation h3 {
         font-size: 15px;
     }
 
@@ -731,7 +625,7 @@ table tr td .VIDEO {
 
     }
 
-    .asideLeftEducation h2 {
+    .asideLeftEducation h3 {
         display: none;
     }
 
@@ -1059,3 +953,123 @@ table tr td .VIDEO {
         /*font-weight: bold;*/
     }
 }
+
+
+
+
+
+
+/*@media screen and (min-width: 1913px) {!**/
+/*!*Content*!*/
+/*button {*/
+/*width: 100%;*/
+/*margin-left: 10%;*/
+/*background: none;*/
+/*border: none;*/
+/*outline: none !important;*/
+/*cursor: pointer;*/
+/*}*/
+
+/*.ListOfPackage {*/
+/*border: none;*/
+/*padding: 0;*/
+/*width: 100%;*/
+/*margin: auto;*/
+/*list-style-type: none;*/
+/*margin-top: 4%;*/
+/*!*height: 600px;*!*/
+
+/*}*/
+
+/*#parent {*/
+/*height: 750px;*/
+/*overflow-y: scroll !important;*/
+/*}*/
+
+/*#parent::-webkit-scrollbar {*/
+/*width: 0.5px;*/
+/*}*/
+
+/*#parent::-webkit-scrollbar-thumb {*/
+/*background-color: #f4ffbd;*/
+/*outline: 1px solid slategray;*/
+/*}*/
+
+/*ul li {*/
+/*border: none;*/
+/*!important;*/
+/*width: 80%;*/
+/*margin-left: 18%;*/
+/*font-family: IRANSans;*/
+/*}*/
+
+/*!*1-Line*!*/
+/*.oneLine {*/
+/*background-color: #a7b462;*/
+/*}*/
+
+/*#LablePackage {*/
+/*margin: auto;*/
+/*margin-left: 14%;*/
+/*padding: 1%;*/
+/*width: 70%;*/
+/*text-align: center;*/
+/*!important;*/
+/*font-size: 20px;*/
+/*font-weight: bold;*/
+/*}*/
+
+/*!*2-Line*!*/
+/*.towLine {*/
+/*background-color: #202413;*/
+/*height: auto;*/
+/*padding-top: 1%;*/
+/*}*/
+
+/*!*3-Line*!*/
+/*.threeLine {*/
+/*background-color: #202413;*/
+/*height: auto;*/
+/*}*/
+
+/*.towLine h5 {*/
+/*color: #b8b8b8;*/
+
+/*}*/
+
+/*.threeLine p {*/
+/*font-size: 15px;*/
+/*font-weight: bold;*/
+/*color: #b8b8b8;*/
+/*}*/
+
+/*#IconSHop {*/
+/*margin-left: 30%;*/
+/*}*/
+
+/*form {*/
+/*margin-left: 77%;*/
+/*}*/
+
+/*.L-1 {*/
+/*color: #75ec63b0;*/
+/*font-weight: bold;*/
+/*}*/
+
+/*.L-2 {*/
+/*color: #ffffff;*/
+/*!*font-weight: bold;*!*/
+/*}*/
+
+/*!*CloseButton*!*/
+/*.contentEducation {*/
+/*padding-bottom: 0;*/
+/*position: absolute;*/
+/*left: 10%;*/
+/*width: 45%;*/
+/*height: 100vh;*/
+/*background-color: #f4ffbd;*/
+/*!*overflow-y: scroll;*!*/
+/*}*/
+
+/*}

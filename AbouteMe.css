@@ -13,13 +13,12 @@ body {
     background-color: #f3c893;
 }
 
-#parentLogoAbout {
-    width: 100%;
-    /* height: 18%; */
+#LogoAbouteMe {
+    width: 7%;
     float: right;
-    position: relative;
-    margin-top: 35%;
-    margin-right: -10%;!important;
+    position: fixed;
+    margin-top: -6%;
+    left: 5%;
 
 }
 
@@ -113,20 +112,23 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fcdcb6;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-size: 20px;
+    background-color: #fcdcb6;
+
 }
 
 .sidenavAbout a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #977750;
     display: block;
     transition: 0.3s;
     text-decoration: none;
+    color: #977750;
+
 
 }
 
@@ -310,40 +312,26 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
 
 }
 
-
-
-
 @media screen and (max-width: 1440px ) {
 
     .asideLeftAbout h2 {
         font-size: 30px !important
     }
-    .sidenavAbout a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #977750;
-        display: block;
-        transition: 0.3s;
-        text-decoration: none;
-
-    }
 
 }
+
 @media screen and (max-width: 1024px ) {
     #LogoAbouteMe {
-        width: 55%;
-        /* height: 18%; */
+        width: 7%;
         float: right;
-        position: relative;
-        margin-top: -71%;
-        margin-right: -16%;
+        position: fixed;
+        margin-top: -9%;
+        left: 5%;
     }
 
     #oneitemAbout {
         font-size: 20px;
     !important;
-        /*padding: 0;!important;*/
         margin-left: -15%;
     !important;
 
@@ -355,7 +343,6 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
         /*padding: 0;!important;*/
         margin-left: -15%;
     !important;
-
     }
 
     #threeitemAbout {
@@ -452,22 +439,15 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
         bottom: 151%;
     }
 }
-@media screen and (min-width: 768px ) {
-    #LogoAbouteMe {
-        width: 55%;
-        /* height: 18%; */
-        float: right;
-        position: relative;
-        margin-top: -86%!important;
-        margin-right: -16%;
 
-    }
+@media screen and (max-width: 768px ) {
 
     #oneitemAbout {
         font-size: 15px;
     !important;
-        /*padding: 0;!important;*/
-        margin-left: -15%;
+        padding: 0;
+    !important;
+        margin-left: 20%;
     !important;
 
     }
@@ -475,8 +455,9 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
     #twoitemAbout {
         font-size: 15px;
     !important;
-        /*padding: 0;!important;*/
-        margin-left: -15%;
+        padding: 0;
+    !important;
+        margin-left: 20%;
     !important;
 
     }
@@ -484,8 +465,9 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
     #threeitemAbout {
         font-size: 15px;
     !important;
-        /*padding: 0;!important;*/
-        margin-left: -15%;
+        padding: 0;
+    !important;
+        margin-left: 20%;
     !important;
 
     }
@@ -493,16 +475,35 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
     #fureitemAbout {
         font-size: 15px;
     !important;
-        /*padding: 0;!important;*/
-        margin-left: -15%;
+        padding: 0;
+    !important;
+        margin-left: 20%;
     !important;
 
     }
 
     .asideLeftAbout h2 {
+        display: none;
+    }
+
+    /*right*/
+    .MyVideoAbout {
+        width: 90%;
+        display: block;
+        margin-top: 15%;
+    }
+
+    .contentAbout p {
+        text-align: justify;
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-weight: bold;
+        font-family: IRANSans;
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 425px ) {
 
     body {
@@ -520,28 +521,32 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
     }
 
     .contentAbout {
-        /*display: none;*/
+        width: 100% !important;
+        height: 45% !important;
+        top: 55% !important;
+        z-index: 1000 !important;
+        background-color: #f3c893;
+        position: absolute !important;
+        left: 0;
+    }
+    .contentAbout::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    .contentAbout::-webkit-scrollbar-thumb {
+        background-color: #f3c893;
+        outline: 1px solid slategray;
+    }
+    .asideRightAbout {
         z-index: 900 !important;
         position: fixed !important;
         width: 100% !important;
-        height: 45% !important;
+        height: 40% !important;
         left: 0 !important;
         top: 15% !important;
         padding-bottom: 0 !important;
         background-color: #fcdcb6 !important;
-        overflow-y: scroll !important;
-    }
-
-    .asideRightAbout {
-        /*display: none;*/
-        width: 100% !important;
-        height: 40% !important;
-        top: 60% !important;
-        z-index: 1000 !important;
-        background-color: #f3c893;
-        position: absolute !important;
-        right: 0 !important;
-        overflow-y: scroll;
+        /*overflow-y: scroll !important;*/
     }
 
     #parentLogoAbout {
@@ -565,23 +570,23 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
 
     #oneitemAbout {
         top: 27%;
-        left: 10%;
+        left: -1%;
     }
 
     #twoitemAbout {
         top: 27%;
-        left: 20%;
+        left: 10%;
     }
 
     #threeitemAbout {
         top: 27%;
-        left: 30%;
+        left: 25%;
 
     }
 
     #fureitemAbout {
         top: 27%;
-        left: 40%;
+        left: 35%;
 
     }
 
@@ -590,24 +595,19 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
     }
 
     .MyVideoAbout {
-        width: 80%;
-        /*margin: 0;*/
-        /*padding: 0;*/
+        width: 70%;
         display: block;
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
-        top: 10%;
-        /*margin-bottom: 10%;*/
+        margin-top: 4%;
     }
 
     .contentAbout p {
         text-align: justify;
-        margin-top: 5%;
+        margin-top: 3%;
         margin-right: 10%;
         margin-left: 10%;
         font-weight: bold;
         font-family: IRANSans;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .parentFab {
@@ -619,14 +619,29 @@ input:checked ~ #shareAbout ~ #linkdinAbout {
 
     }
 
-}
-@media screen and (min-width:320px){
-    #LogoAbouteMe {
-        width: 55%;
-        /* height: 18%; */
-        float: right;
-        position: relative;
-        margin-top: -71%;
-        margin-right: 5%;
+    .closebtnEndAbout {
+        position: fixed;
+        bottom: 0;
+        left: -15%;
+        /* margin-top: 88vh; */
+        font-size: 30px;
+        margin-left: 58%;
+        background-image: url(IMG/CloseIcon/Close-Window-AbouteMe.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border: none;
+        color: #977750 !important;
+        background-color: #f3c893;
+        display: block;
     }
+
+    #LogoAbouteMe {
+        position: relative;
+        margin-top: -85%;
+        margin-right: -4%;
+        float: right;
+        width: 55%;
+    }
+
 }

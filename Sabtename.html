@@ -145,22 +145,21 @@
             <label for="switch" class="switch">
                 <span class="bg"></span>
             </label>
-        </form><br/><br>
+        </form>
+        <br/><br>
         <p id="demo">Time</p>
         <button id="Conferm" onclick="DDDD()">Conferm</button>
 
     </div>
-<br/>
-    <div class="parentCloseAbout">
-        <input class="closebtnEndOrderMe" type="button" onclick="windowClose();">
-    </div>
+    <br/>
+    <input class="closebtnEndOrderMe" type="button" onclick="windowClose();">
 </div>
 </body>
 </html>
 
 <script language="javascript" type="text/javascript">
     function windowClose() {
-        var window = document.getElementById("OrderMePage");
+        window.open('', '_parent', '');
         window.close();
     }
 </script>
@@ -251,7 +250,7 @@
     var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
 
     // Update the count down every 1 second
-    var x = setInterval(function() {
+    var x = setInterval(function () {
 
         // Get todays date and time
         var now = new Date().getTime();
