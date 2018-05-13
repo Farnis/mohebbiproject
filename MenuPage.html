@@ -135,6 +135,7 @@
         origin: 'top',
         duration: 10000,
     });
+
     // IMG LODING
     sr.reveal('.img', {
         // viewOffset: { top: 100, right: 50, bottom: 30, left: 0 },
@@ -142,6 +143,16 @@
         delay: 3500,
         duration: 2000,
     });
+    if (window.matchMedia("(max-width: 425px)").matches) {
+
+        // IMG LODING
+        sr.reveal('.img', {
+            // viewOffset: { top: 100, right: 50, bottom: 30, left: 0 },
+            origin: 'left',
+            delay: 0,
+            duration: 1000,
+        });
+    }
 </script>
 <script>
     // HOVER BY IMG
